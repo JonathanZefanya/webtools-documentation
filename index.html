@@ -1,0 +1,3843 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Documentation - Web Tools
+  </title>
+  <meta content="Learn how to install, update &amp; run Web Tools PHP script on your web server and use it to it's full potential." name="description"/>
+  <link href="https://github.com/JonathanZefanya/web-tools/blob/main/README.md" rel="canonical"/>
+  <link href="assets\app.css" rel="stylesheet"/>
+  <!-- Opengraph -->
+  <meta content="website" property="og:type"/>
+  <meta content="Web Tools" property="og:site_name">
+   <meta content="1017" property="og:image:height"/>
+   <meta content="2000" property="og:image:width"/>
+   <meta content="Documentation - Web Tools" property="og:title"/>
+   <meta content="Learn how to install, update &amp; run Web Tools PHP script on your web server and use it to it's full potential." property="og:description"/>
+   <meta content="https://github.com/JonathanZefanya/web-tools/blob/main/README.md" property="og:url"/>
+   <!-- Twitter -->
+   <meta content="summary_large_image" name="twitter:card">
+    <meta content="@altumcode" name="twitter:site">
+     <meta content="https://github.com/JonathanZefanya/web-tools/blob/main/README.md" name="twitter:url">
+      <meta content="Documentation - Web Tools" name="twitter:title">
+       <meta content="Learn how to install, update &amp; run Web Tools PHP script on your web server and use it to it's full potential." name="twitter:description"/>
+       <!-- Favicons -->
+       <link href="./assets/images/favicon.png" rel="icon">
+        </script>
+       </link>
+      </meta>
+     </meta>
+    </meta>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <header class="mb-5 mb-lg-6 mb-xl-8">
+   <div class="container">
+    <nav class="navbar navbar-main navbar-expand-md navbar-light bg-white">
+     <a class="navbar-brand d-flex" href="https://xead.my.id/">
+      <img alt="Web Tools logo" class="img-fluid mr-3 logo" src="assets\logo.png"/>
+      Web Tools
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main>
+   <div class="container">
+    <h1>
+     Web Tools documentation
+    </h1>
+    <div class="row mt-5">
+     <div class="col-12 col-lg-3 mb-5 mb-lg-0">
+      <div class="card bg-gray-50 sidebar-nav">
+       <div class="card-body">
+        <nav class="nav">
+         <ul class="sidebar list-style-none mb-0" id="sidebar-ul">
+          <li class="nav-item">
+           <a class="nav-link" href="#start">
+            Get started
+           </a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#requirements">
+            Requirements
+           </a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#installation">
+            Installation
+           </a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#nginx">
+            Configuration
+           </a>
+           <ul class="sidebar-sub ml-4 list-style-none">
+            <li class="nav-item">
+             <a class="nav-link" href="#nginx">
+              Nginx
+             </a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="#social-logins">
+              Social logins
+             </a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="#captchas">
+              Captchas
+             </a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="#payment-processors">
+              Payment processors
+             </a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="#taxes">
+              Taxes
+             </a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="#multicurrency">
+              Multicurrency
+             </a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="#google-safe-browsing">
+              Google Safe Browsing
+             </a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="#google-static-maps">
+              Google Static Maps
+             </a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="#domains">
+              Custom domains
+             </a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="#notification-handlers">
+              Notification handlers
+             </a>
+            </li>
+           </ul>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#faq">
+            FAQ
+           </a>
+          </li>
+         </ul>
+        </nav>
+       </div>
+      </div>
+     </div>
+     <div class="col" id="content">
+      <div class="card bg-gray-50 mb-5">
+       <div class="card-body">
+        <section id="start">
+         <h2 class="h5">
+          Get started
+         </h2>
+         <p class="text-muted">
+          This documentation will get you through the
+          <strong>
+           installation &amp; update process
+          </strong>
+          of Web Tools, as well as some
+          <strong>
+           advanced features
+          </strong>
+          available configurations.
+         </p>
+         <p class="text-muted">
+          Most features inside Web Tools are self-explanatory and have helper texts near them.
+         </p>
+         <p class="text-muted">
+          The steps are straight forward and does not require any special or out of the ordinary task,
+          <strong>
+           minimum overall web related knowledge is required
+          </strong>
+          .
+         </p>
+        </section>
+       </div>
+      </div>
+      <div class="card bg-gray-50 mb-5">
+       <div class="card-body">
+        <section id="requirements">
+         <h2 class="h5">
+          Requirements
+         </h2>
+         <p class="text-muted">
+          Ensure your server meets the specified requirements prior to installation or purchase.
+         </p>
+         <div class="table-responsive border rounded block">
+          <table class="table mb-0">
+           <tbody>
+            <tr>
+             <td class="font-weight-bold border-0">
+              PHP
+             </td>
+             <td class="border-0">
+              PHP 8.3 - 8.4
+             </td>
+            </tr>
+            <tr>
+             <td class="font-weight-bold">
+              Extensions
+             </td>
+             <td>
+              cURL, OpenSSL, mbstring, MySQLi
+             </td>
+            </tr>
+            <tr>
+             <td class="font-weight-bold">
+              Database
+             </td>
+             <td>
+              MySQL 5.7.3+ or MariaDB equivalent
+             </td>
+            </tr>
+            <tr>
+             <td class="font-weight-bold">
+              Server
+             </td>
+             <td>
+              Apache or Nginx
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </div>
+         <div class="alert alert-info mb-0">
+          These requirements assume you're running on a decent, up-to-date server with the essential extensions already in place. Other extensions and slight changes might be required otherwise.
+         </div>
+        </section>
+       </div>
+      </div>
+      <div class="card bg-gray-50 mb-5">
+       <div class="card-body">
+        <section id="installation">
+         <h2 class="h5">
+          Installation
+         </h2>
+         <p class="text-muted">
+          This installation typically requires approximately 10 minutes for completion when followed accurately.
+         </p>
+         <div class="block">
+          <h3 class="h6 mb-3">
+           Prepare the database
+          </h3>
+          <ol>
+           <li>
+            Create a new Database User for the upcoming new database
+            <small>
+             (optional)
+            </small>
+           </li>
+           <li>
+            Create a new Database
+           </li>
+           <li>
+            Prepare the Database
+            <strong>
+             Host
+            </strong>
+            ,
+            <strong>
+             Name
+            </strong>
+            ,
+            <strong>
+             Username
+            </strong>
+            and
+            <strong>
+             Password
+            </strong>
+            for the upcoming steps.
+           </li>
+          </ol>
+         </div>
+         <div class="block">
+          <h3 class="h6 mb-3">
+           Upload the product
+          </h3>
+          <p>
+           Upload the
+           <strong>
+            content of the
+           </strong>
+           <code>
+            product/
+           </code>
+           folder on your webhost.
+          </p>
+          <p>
+           The product can be uploaded either on a
+           <strong>
+            subdomain
+           </strong>
+           ,
+           <strong>
+            domain
+           </strong>
+           or
+           <strong>
+            subfolder
+           </strong>
+           , depending on your needs.
+          </p>
+          <div class="alert alert-info" role="alert">
+           <strong>
+            Apache servers:
+           </strong>
+           Make sure the .htaccess file is uploaded, as it may appear as hidden on your computer by default.
+          </div>
+          <div class="alert alert-info" role="alert">
+           <strong>
+            Nginx servers:
+           </strong>
+           Make sure you do the
+           <a href="#nginx">
+            Nginx setup
+           </a>
+           after the installation.
+          </div>
+         </div>
+         <div class="block">
+          <h3 class="h6 mb-3">
+           Start the installation process
+          </h3>
+          <ol>
+           <li>
+            Access the product on your website and access the
+            <code>
+             domain.com/install
+            </code>
+            path.
+           </li>
+           <li>
+            You need to set the permissions (CHMOD) of the files / folders mentioned in the installation process to either
+            <strong>
+             755
+            </strong>
+            ,
+            <strong>
+             775
+            </strong>
+            , or
+            <strong>
+             777
+            </strong>
+            which will depend on your actual server.
+           </li>
+           <li>
+            Follow the steps in the installation process.
+           </li>
+           <li>
+            If the installation is successful, you will see the admin login credentials.
+           </li>
+          </ol>
+         </div>
+         <div class="block">
+          <h3 class="h6 mb-3">
+           Cron job setup
+          </h3>
+          <p>
+           The cron job must be set up as it is responsible for handling background tasks.
+          </p>
+          <ol>
+           <li>
+            Make sure to login and go to the
+            <strong>
+             Admin Panel
+            </strong>
+            -&gt;
+            <strong>
+             Website Settings
+            </strong>
+            -&gt;
+            <strong>
+             Cron tab
+            </strong>
+           </li>
+           <li>
+            Create a new cron job with
+            <strong>
+             each cron job commands
+            </strong>
+            that you see in there.
+           </li>
+           <li>
+            The process varies based on your web host provider; refer to their documentation for Cron job setup instructions.
+           </li>
+          </ol>
+         </div>
+         <div class="block">
+          <h3 class="h6 mb-3">
+           Email setup
+          </h3>
+          <p>
+           If you want your site to be able to send emails, then you must do this setup.
+          </p>
+          <ol>
+           <li>
+            Make sure to login and go to the
+            <strong>
+             Admin Panel
+            </strong>
+            -&gt;
+            <strong>
+             Website Settings
+            </strong>
+            -&gt;
+            <strong>
+             SMTP (Email) tab
+            </strong>
+           </li>
+           <li>
+            Fill the fields with your SMTP provider credentials.
+           </li>
+           <li>
+            Save &amp; test your SMTP to make sure it works.
+           </li>
+          </ol>
+         </div>
+        </section>
+       </div>
+      </div>
+      <div class="card bg-gray-50 mb-5">
+       <div class="card-body">
+        <section id="nginx">
+         <h2 class="h5">
+          NGINX Setup
+         </h2>
+         <p>
+          Use the following NGINX rewrite rule to ensure proper functionality of the URLs:
+         </p>
+         <div class="mb-3">
+          <pre>
+if(!-e $request_filename){
+    rewrite ^\/(.+)$ /index.php?altum=$1 last;
+}</pre>
+         </div>
+         <p class="mb-0">
+          This command should be added in your domain.conf nginx file in the location / { ... } field.
+         </p>
+        </section>
+       </div>
+      </div>
+      <div class="card bg-gray-50 mb-5">
+       <div class="card-body">
+        <section id="social-logins">
+         <h2 class="h5">
+          Social Logins
+         </h2>
+         <p class="text-muted">
+          Follow these updated steps to set up additional login methods via popular social networks.
+                                Make sure to use
+          <strong>
+           HTTPS
+          </strong>
+          for all redirect URIs and verify your domains when required.
+         </p>
+         <!-- Facebook Login -->
+         <div class="block">
+          <h3 class="h6 mb-3">
+           Facebook Login
+          </h3>
+          <ol>
+           <li>
+            Go to the
+            <a href="https://developers.facebook.com/" target="_blank">
+             Meta for Developers
+            </a>
+            page and log in.
+           </li>
+           <li>
+            From the top-right menu, click
+            <strong>
+             My Apps
+            </strong>
+            →
+            <strong>
+             Create App
+            </strong>
+            and select the app type (usually
+            <em>
+             Consumer
+            </em>
+            ).
+           </li>
+           <li>
+            Fill out the required details (app name, contact email, business account) and click
+            <strong>
+             Create App
+            </strong>
+            .
+           </li>
+           <li>
+            On your app dashboard, under
+            <strong>
+             Add Product
+            </strong>
+            , select
+            <strong>
+             Facebook Login
+            </strong>
+            and click
+            <strong>
+             Set Up
+            </strong>
+            .
+           </li>
+           <li>
+            Go to
+            <strong>
+             Settings → Basic
+            </strong>
+            and complete required fields:
+            <ul>
+             <li>
+              App Domains
+             </li>
+             <li>
+              Privacy Policy URL
+             </li>
+             <li>
+              Terms of Service URL
+             </li>
+             <li>
+              App Icon (recommended)
+             </li>
+            </ul>
+            Your domain must be verified if requested.
+           </li>
+           <li>
+            Go to
+            <strong>
+             Facebook Login → Settings
+            </strong>
+            and:
+            <ul>
+             <li>
+              Enable
+              <strong>
+               Client OAuth Login
+              </strong>
+              and
+              <strong>
+               Web OAuth Login
+              </strong>
+              .
+             </li>
+             <li>
+              In
+              <strong>
+               Valid OAuth Redirect URIs
+              </strong>
+              , add:
+              <br/>
+              <code>
+               https://yourdomain.com/login/facebook
+              </code>
+             </li>
+            </ul>
+           </li>
+           <li>
+            Switch the app from
+            <strong>
+             Development
+            </strong>
+            mode to
+            <strong>
+             Live
+            </strong>
+            so that non-admin users can log in.
+           </li>
+           <li>
+            Go to
+            <strong>
+             Settings → Basic
+            </strong>
+            and copy your
+            <strong>
+             App ID
+            </strong>
+            and
+            <strong>
+             App Secret
+            </strong>
+            .
+           </li>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → Facebook Login Tab
+            </strong>
+            , paste the keys, enable Facebook Login, and
+            <strong>
+             Submit
+            </strong>
+            .
+           </li>
+          </ol>
+         </div>
+         <!-- Google Login -->
+         <div class="block">
+          <h3 class="h6 mb-3">
+           Google Login
+          </h3>
+          <ol>
+           <li>
+            Go to the
+            <a href="https://console.cloud.google.com/" target="_blank">
+             Google Cloud Console
+            </a>
+            and log in.
+           </li>
+           <li>
+            Create a
+            <strong>
+             New Project
+            </strong>
+            or select an existing one.
+           </li>
+           <li>
+            Navigate to
+            <strong>
+             APIs &amp; Services → OAuth consent screen
+            </strong>
+            :
+            <ul>
+             <li>
+              Choose
+              <strong>
+               External
+              </strong>
+              user type for public access.
+             </li>
+             <li>
+              Fill in app name, support email, app logo, privacy policy URL, and terms of service URL.
+             </li>
+             <li>
+              Add your domain under
+              <strong>
+               Authorized domains
+              </strong>
+              (must be verified).
+             </li>
+            </ul>
+           </li>
+           <li>
+            Add required scopes:
+            <code>
+             openid
+            </code>
+            ,
+            <code>
+             email
+            </code>
+            ,
+            <code>
+             profile
+            </code>
+            .
+           </li>
+           <li>
+            Save and publish the consent screen.
+           </li>
+           <li>
+            Go to
+            <strong>
+             Credentials → Create Credentials → OAuth Client ID
+            </strong>
+            :
+            <ul>
+             <li>
+              Application type:
+              <strong>
+               Web Application
+              </strong>
+              .
+             </li>
+             <li>
+              In
+              <strong>
+               Authorized redirect URIs
+              </strong>
+              , add:
+              <br/>
+              <code>
+               https://yourdomain.com/login/google
+              </code>
+             </li>
+            </ul>
+           </li>
+           <li>
+            Copy the generated
+            <strong>
+             Client ID
+            </strong>
+            and
+            <strong>
+             Client Secret
+            </strong>
+            .
+           </li>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → Google Login Tab
+            </strong>
+            , paste the keys, enable Google Login, and
+            <strong>
+             Submit
+            </strong>
+            .
+           </li>
+          </ol>
+         </div>
+         <!-- Twitter Login -->
+         <div class="block">
+          <h3 class="h6 mb-3">
+           Twitter (X) Login
+          </h3>
+          <ol>
+           <li>
+            Go to the
+            <a href="https://developer.twitter.com/en/portal/dashboard" target="_blank">
+             Twitter Developer Portal
+            </a>
+            and log in.
+           </li>
+           <li>
+            Apply for a developer account if you don’t have one.
+           </li>
+           <li>
+            From the dashboard, go to
+            <strong>
+             Projects &amp; Apps → Overview
+            </strong>
+            and click
+            <strong>
+             Create App
+            </strong>
+            .
+           </li>
+           <li>
+            Fill out the app details and save.
+           </li>
+           <li>
+            In
+            <strong>
+             App Settings → Authentication Settings
+            </strong>
+            :
+            <ul>
+             <li>
+              Enable
+              <strong>
+               Web App, Automated App or Bot
+              </strong>
+              Type of App.
+             </li>
+             <li>
+              Enable
+              <strong>
+               Request email addresses from users
+              </strong>
+              .
+             </li>
+             <li>
+              In
+              <strong>
+               Callback URLs
+              </strong>
+              , add:
+              <br/>
+              <code>
+               https://yourdomain.com/login/twitter
+              </code>
+             </li>
+             <li>
+              In
+              <strong>
+               Website URL
+              </strong>
+              , add:
+              <br/>
+              <code>
+               https://yourdomain.com/
+              </code>
+             </li>
+            </ul>
+           </li>
+           <li>
+            Go to
+            <strong>
+             Keys and Tokens
+            </strong>
+            to copy the
+            <strong>
+             API Key
+            </strong>
+            and
+            <strong>
+             API Secret
+            </strong>
+            .
+           </li>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → Twitter Login Tab
+            </strong>
+            , paste the keys, enable Twitter Login, and
+            <strong>
+             Submit
+            </strong>
+            .
+           </li>
+           <li>
+            If required, request
+            <strong>
+             Elevated Access
+            </strong>
+            for your Twitter API project.
+           </li>
+          </ol>
+         </div>
+         <!-- Discord Login -->
+         <div class="block">
+          <h3 class="h6 mb-3">
+           Discord Login
+          </h3>
+          <ol>
+           <li>
+            Go to the
+            <a href="https://discord.com/developers/applications" target="_blank">
+             Discord Developer Portal
+            </a>
+            and log in.
+           </li>
+           <li>
+            Click
+            <strong>
+             New Application
+            </strong>
+            and fill in the app details.
+           </li>
+           <li>
+            Go to the
+            <strong>
+             OAuth2
+            </strong>
+            page from the sidebar.
+           </li>
+           <li>
+            In the
+            <strong>
+             Redirects
+            </strong>
+            section, add:
+            <br/>
+            <code>
+             https://yourdomain.com/login/discord
+            </code>
+           </li>
+           <li>
+            Copy the
+            <strong>
+             Client ID
+            </strong>
+            and
+            <strong>
+             Client Secret
+            </strong>
+            from the
+            <strong>
+             Client information
+            </strong>
+            section.
+           </li>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → Discord Login Tab
+            </strong>
+            , paste the keys, enable Discord Login, and
+            <strong>
+             Submit
+            </strong>
+            .
+           </li>
+          </ol>
+         </div>
+         <!-- LinkedIn Login -->
+         <div class="block">
+          <h3 class="h6 mb-3">
+           LinkedIn Login
+          </h3>
+          <ol>
+           <li>
+            Go to the
+            <a href="https://developer.linkedin.com/" target="_blank">
+             LinkedIn Developer Portal
+            </a>
+            and log in.
+           </li>
+           <li>
+            Click
+            <strong>
+             Create App
+            </strong>
+            and complete the details.
+           </li>
+           <li>
+            On the app dashboard, go to
+            <strong>
+             Products
+            </strong>
+            and request access for
+            <strong>
+             Sign In with LinkedIn
+            </strong>
+            .
+           </li>
+           <li>
+            Navigate to
+            <strong>
+             Auth → OAuth 2.0 Settings
+            </strong>
+            and add the redirect URL:
+            <br/>
+            <code>
+             https://yourdomain.com/login/linkedin
+            </code>
+           </li>
+           <li>
+            Copy the
+            <strong>
+             Client ID
+            </strong>
+            and
+            <strong>
+             Client Secret
+            </strong>
+            .
+           </li>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → LinkedIn Login Tab
+            </strong>
+            , paste the keys, enable LinkedIn Login, and
+            <strong>
+             Submit
+            </strong>
+            .
+           </li>
+          </ol>
+         </div>
+         <!-- Microsoft Login -->
+         <div class="block">
+          <h3 class="h6 mb-3">
+           Microsoft Login
+          </h3>
+          <ol>
+           <li>
+            Go to the
+            <a href="https://aad.portal.azure.com/" target="_blank">
+             Microsoft Azure Portal
+            </a>
+            and log in.
+           </li>
+           <li>
+            Navigate to
+            <strong>
+             Azure Active Directory → App Registrations → New Registration
+            </strong>
+            .
+           </li>
+           <li>
+            Fill in these details:
+            <ul>
+             <li>
+              App Name
+             </li>
+             <li>
+              Supported account types:
+              <strong>
+               Accounts in any organizational directory and personal Microsoft accounts
+              </strong>
+             </li>
+             <li>
+              Redirect URI → Web:
+              <code>
+               https://yourdomain.com/login/microsoft
+              </code>
+             </li>
+            </ul>
+           </li>
+           <li>
+            Click
+            <strong>
+             Register
+            </strong>
+            to create the app.
+           </li>
+           <li>
+            Copy the
+            <strong>
+             Application (Client) ID
+            </strong>
+            for later use.
+           </li>
+           <li>
+            Go to
+            <strong>
+             Certificates &amp; Secrets
+            </strong>
+            →
+            <strong>
+             New client secret
+            </strong>
+            → copy the
+            <strong>
+             Value
+            </strong>
+            immediately.
+           </li>
+           <li>
+            Go to
+            <strong>
+             Authentication
+            </strong>
+            and:
+            <ul>
+             <li>
+              Check
+              <strong>
+               Access tokens (used for implicit flow)
+              </strong>
+              .
+             </li>
+             <li>
+              Save changes.
+             </li>
+            </ul>
+           </li>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → Microsoft Login Tab
+            </strong>
+            , paste the Application ID and Secret Value, enable Microsoft Login, and
+            <strong>
+             Submit
+            </strong>
+            .
+           </li>
+          </ol>
+         </div>
+        </section>
+       </div>
+      </div>
+      <div class="card bg-gray-50 mb-5">
+       <div class="card-body">
+        <section id="captchas">
+         <h2 class="h5">
+          Captchas
+         </h2>
+         <p>
+          These are the steps to integrate more advanced and powerful captcha codes for your system.
+         </p>
+         <!-- Cloudflare Turnstile -->
+         <div class="block">
+          <h3 class="h6 mb-3">
+           Cloudflare Turnstile
+          </h3>
+          <ol>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → Captcha
+            </strong>
+            page, set the captcha type to
+            <strong>
+             Cloudflare Turnstile
+            </strong>
+            .
+           </li>
+           <li>
+            Log in to your
+            <a href="https://dash.cloudflare.com/" target="_blank">
+             Cloudflare Dashboard
+            </a>
+            .
+           </li>
+           <li>
+            In the sidebar, go to
+            <strong>
+             Turnstile
+            </strong>
+            and click
+            <strong>
+             Add Widget
+            </strong>
+            .
+           </li>
+           <li>
+            Fill in the form:
+            <ul>
+             <li>
+              <strong>
+               Widget Name
+              </strong>
+              – a descriptive name (e.g., "Website Login").
+             </li>
+             <li>
+              <strong>
+               Domain
+              </strong>
+              – your actual website domain (e.g.,
+              <code>
+               yourdomain.com
+              </code>
+              ).
+             </li>
+             <li>
+              <strong>
+               Widget Mode
+              </strong>
+              – choose
+              <em>
+               Managed
+              </em>
+              for the simplest setup.
+             </li>
+            </ul>
+           </li>
+           <li>
+            Click
+            <strong>
+             Create
+            </strong>
+            to generate the widget.
+           </li>
+           <li>
+            Cloudflare will now provide a
+            <strong>
+             Site Key
+            </strong>
+            and
+            <strong>
+             Secret Key
+            </strong>
+            .
+           </li>
+           <li>
+            Go back to your
+            <strong>
+             Admin Panel
+            </strong>
+            and paste these keys into the fields under the Captcha settings.
+           </li>
+           <li>
+            Click
+            <strong>
+             Save
+            </strong>
+            to apply the new settings.
+           </li>
+          </ol>
+         </div>
+         <!-- Google reCAPTCHA -->
+         <div class="block">
+          <h3 class="h6 mb-3">
+           Google reCAPTCHA
+          </h3>
+          <ol>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → Captcha
+            </strong>
+            page, set the captcha type to
+            <strong>
+             Google reCAPTCHA v2 Checkbox
+            </strong>
+            .
+           </li>
+           <li>
+            Log in to the
+            <a href="https://www.google.com/recaptcha/admin/create" target="_blank">
+             Google reCAPTCHA Admin Console
+            </a>
+            .
+           </li>
+           <li>
+            Register a new site:
+            <ul>
+             <li>
+              <strong>
+               Label
+              </strong>
+              – a name for your site.
+             </li>
+             <li>
+              Select
+              <strong>
+               reCAPTCHA v2
+              </strong>
+              .
+             </li>
+             <li>
+              Add your website domain.
+             </li>
+            </ul>
+           </li>
+           <li>
+            Once created, copy the
+            <strong>
+             Site Key
+            </strong>
+            and
+            <strong>
+             Secret Key
+            </strong>
+            .
+           </li>
+           <li>
+            Paste these keys into the corresponding fields in your
+            <strong>
+             Admin Panel
+            </strong>
+            .
+           </li>
+           <li>
+            Click
+            <strong>
+             Save
+            </strong>
+            to enable Google reCAPTCHA on your site.
+           </li>
+          </ol>
+         </div>
+         <!-- hCaptcha -->
+         <div class="block">
+          <h3 class="h6 mb-3">
+           hCaptcha
+          </h3>
+          <ol>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → Captcha
+            </strong>
+            page, set the captcha type to
+            <strong>
+             hCaptcha
+            </strong>
+            .
+           </li>
+           <li>
+            Go to the
+            <a href="https://www.hcaptcha.com/" target="_blank">
+             hCaptcha Website
+            </a>
+            and log in or create an account.
+           </li>
+           <li>
+            Navigate to
+            <a href="https://dashboard.hcaptcha.com/sites/new" target="_blank">
+             Sites → Add New Site
+            </a>
+            .
+           </li>
+           <li>
+            Fill out the required details:
+            <ul>
+             <li>
+              <strong>
+               Site Name
+              </strong>
+             </li>
+             <li>
+              <strong>
+               Domains
+              </strong>
+              – your actual website domain.
+             </li>
+            </ul>
+           </li>
+           <li>
+            After saving, hCaptcha will generate a
+            <strong>
+             Site Key
+            </strong>
+            .
+           </li>
+           <li>
+            Go to
+            <a href="https://dashboard.hcaptcha.com/settings" target="_blank">
+             Settings → Account
+            </a>
+            and copy your
+            <strong>
+             Secret Key
+            </strong>
+            .
+           </li>
+           <li>
+            Paste both the Site Key and Secret Key into the corresponding fields in your
+            <strong>
+             Admin Panel
+            </strong>
+            .
+           </li>
+           <li>
+            Click
+            <strong>
+             Save
+            </strong>
+            to activate hCaptcha on your site.
+           </li>
+          </ol>
+         </div>
+        </section>
+       </div>
+      </div>
+      <div class="card bg-gray-50 mb-5">
+       <div class="card-body">
+        <section id="payment-processors">
+         <h2 class="h5">
+          Payment Processors
+         </h2>
+         <p class="text-muted">
+          Follow these steps to connect your system with available payment gateways.
+          <strong>
+           Only available for Extended License holders.
+          </strong>
+         </p>
+         <!-- PayPal -->
+         <div class="block" id="paypal">
+          <h3 class="h6 mb-3">
+           PayPal
+          </h3>
+          <ol>
+           <li>
+            Go to the
+            <a href="https://developer.paypal.com/" target="_blank">
+             PayPal Developer Dashboard
+            </a>
+            and log in.
+           </li>
+           <li>
+            Go to
+            <strong>
+             My Apps &amp; Credentials → REST API Apps
+            </strong>
+            and click
+            <strong>
+             Create App
+            </strong>
+            .
+           </li>
+           <li>
+            Enter an app name and other required details, then create it.
+           </li>
+           <li>
+            Switch the app to
+            <strong>
+             Live Mode
+            </strong>
+            using the toggle near the app name.
+           </li>
+           <li>
+            Copy the
+            <strong>
+             Client ID
+            </strong>
+            and
+            <strong>
+             Secret
+            </strong>
+            .
+           </li>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → PayPal Tab
+            </strong>
+            , paste the Client ID and Secret. Set the Mode to
+            <strong>
+             Live
+            </strong>
+            and
+            <strong>
+             Submit
+            </strong>
+            the settings.
+           </li>
+           <li>
+            Back in PayPal Dashboard, open the created app and go to the
+            <strong>
+             Webhooks
+            </strong>
+            section.
+           </li>
+           <li>
+            Click
+            <strong>
+             Add Webhook
+            </strong>
+            and set the URL:
+            <br/>
+            <code>
+             https://yourdomain.com/webhook-paypal
+            </code>
+           </li>
+           <li>
+            Select the events:
+            <ul>
+             <li>
+              <strong>
+               Payment sale completed
+              </strong>
+             </li>
+             <li>
+              <strong>
+               Checkout order approved
+              </strong>
+             </li>
+            </ul>
+           </li>
+           <li>
+            Save the webhook.
+           </li>
+          </ol>
+         </div>
+         <!-- Stripe -->
+         <div class="block" id="stripe">
+          <h3 class="h6 mb-3">
+           Stripe
+          </h3>
+          <ol>
+           <li>
+            Log in to the
+            <a href="https://dashboard.stripe.com/" target="_blank">
+             Stripe Dashboard
+            </a>
+            .
+           </li>
+           <li>
+            Go to
+            <a href="https://dashboard.stripe.com/account/apikeys" target="_blank">
+             Developers → API Keys
+            </a>
+            .
+           </li>
+           <li>
+            Ensure your keys are set to
+            <strong>
+             Live Mode
+            </strong>
+            to accept real payments.
+           </li>
+           <li>
+            Copy the
+            <strong>
+             Publishable Key
+            </strong>
+            and
+            <strong>
+             Secret Key
+            </strong>
+            .
+           </li>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → Stripe Tab
+            </strong>
+            , paste the keys and save.
+           </li>
+           <li>
+            From the Stripe sidebar, go to
+            <strong>
+             Developers → Webhooks
+            </strong>
+            and click
+            <strong>
+             Add Endpoint
+            </strong>
+            .
+           </li>
+           <li>
+            Set the Endpoint URL:
+            <br/>
+            <code>
+             https://yourdomain.com/webhook-stripe
+            </code>
+           </li>
+           <li>
+            Select events to send:
+            <ul>
+             <li>
+              <code>
+               checkout.session.completed
+              </code>
+             </li>
+             <li>
+              <code>
+               invoice.paid
+              </code>
+             </li>
+             <li>
+              <code>
+               invoice.upcoming
+              </code>
+             </li>
+            </ul>
+           </li>
+           <li>
+            Save the webhook and copy the
+            <strong>
+             Signing Secret
+            </strong>
+            .
+           </li>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            , paste the Signing Secret into the
+            <strong>
+             Webhook Secret
+            </strong>
+            field under the Stripe tab.
+           </li>
+          </ol>
+         </div>
+         <!-- Offline Payments -->
+         <div class="block" id="offline_payments">
+          <h3 class="h6 mb-3">
+           Offline Payments
+          </h3>
+          <ol>
+           <li>
+            Enable offline payments in your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → Offline Payment Tab
+            </strong>
+            .
+           </li>
+           <li>
+            In the
+            <strong>
+             Instructions
+            </strong>
+            field, add clear details about how customers should complete offline payments (e.g., bank account details).
+           </li>
+           <li>
+            When customers check out, they can select offline payment as a method.
+           </li>
+           <li>
+            They will see the instructions and must upload proof of payment.
+           </li>
+           <li>
+            As an admin, go to
+            <strong>
+             Admin Panel → Payments
+            </strong>
+            , review proofs, and approve valid payments.
+           </li>
+           <li>
+            Upon approval, the plan is activated for the customer.
+           </li>
+           <li>
+            If proof is invalid or fake, delete the payment to reject it.
+           </li>
+          </ol>
+         </div>
+         <!-- Coinbase -->
+         <div class="block" id="coinbase">
+          <h3 class="h6 mb-3">
+           Coinbase Commerce
+          </h3>
+          <ol>
+           <li>
+            Log in to the
+            <a href="https://commerce.coinbase.com/dashboard" target="_blank">
+             Coinbase Dashboard
+            </a>
+            .
+           </li>
+           <li>
+            Go to
+            <a href="https://commerce.coinbase.com/dashboard/settings" target="_blank">
+             Settings
+            </a>
+            .
+           </li>
+           <li>
+            Under
+            <strong>
+             API Keys
+            </strong>
+            , generate and copy your
+            <strong>
+             API Key
+            </strong>
+            .
+           </li>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → Coinbase Tab
+            </strong>
+            , paste the API Key.
+           </li>
+           <li>
+            Under
+            <strong>
+             Webhook Subscriptions
+            </strong>
+            , click
+            <strong>
+             Add Endpoint
+            </strong>
+            and enter:
+            <br/>
+            <code>
+             https://yourdomain.com/webhook-coinbase
+            </code>
+           </li>
+           <li>
+            Save the webhook and copy the
+            <strong>
+             Shared Secret
+            </strong>
+            .
+           </li>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            , paste the Shared Secret into the
+            <strong>
+             Webhook Secret
+            </strong>
+            field under the Coinbase tab.
+           </li>
+          </ol>
+         </div>
+         <!-- Crypto.com -->
+         <div class="block" id="crypto_com">
+          <h3 class="h6 mb-3">
+           Crypto.com
+          </h3>
+          <ol>
+           <li>
+            Log in to the
+            <a href="https://merchant.crypto.com/" target="_blank">
+             Crypto.com Merchant Dashboard
+            </a>
+            .
+           </li>
+           <li>
+            Go to
+            <a href="https://merchant.crypto.com/integration/api_keys" target="_blank">
+             Developers → API Keys
+            </a>
+            .
+           </li>
+           <li>
+            Copy your
+            <strong>
+             Publishable Key
+            </strong>
+            and
+            <strong>
+             Secret Key
+            </strong>
+            .
+           </li>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → Crypto.com Tab
+            </strong>
+            , paste the keys.
+           </li>
+           <li>
+            Go to
+            <strong>
+             Webhooks
+            </strong>
+            in the Crypto.com dashboard and click
+            <strong>
+             Add Webhook
+            </strong>
+            .
+           </li>
+           <li>
+            Set the URL:
+            <br/>
+            <code>
+             https://yourdomain.com/webhook-crypto-com
+            </code>
+           </li>
+           <li>
+            Copy the
+            <strong>
+             Signature Secret
+            </strong>
+            and paste it into the
+            <strong>
+             Webhook Secret
+            </strong>
+            field in your
+            <strong>
+             Admin Panel
+            </strong>
+            .
+           </li>
+          </ol>
+         </div>
+         <!-- PayU -->
+         <div class="block" id="payu">
+          <h3 class="h6 mb-3">
+           PayU
+          </h3>
+          <ol>
+           <li>
+            Log in to your
+            <a href="https://payu.com" target="_blank">
+             PayU account
+            </a>
+            .
+           </li>
+           <li>
+            Create a new shop and fill in all required details.
+           </li>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → PayU Tab
+            </strong>
+            , paste the provided API keys.
+           </li>
+          </ol>
+         </div>
+         <!-- Iyzico -->
+         <div class="block" id="iyzico">
+          <h3 class="h6 mb-3">
+           Iyzico
+          </h3>
+          <ol>
+           <li>
+            Log in to the
+            <a href="https://merchant.iyzipay.com/auth/login" target="_blank">
+             Iyzico Merchant Dashboard
+            </a>
+            .
+           </li>
+           <li>
+            Go to
+            <a href="https://merchant.iyzipay.com/merchant-settings" target="_blank">
+             Merchant Settings
+            </a>
+            .
+           </li>
+           <li>
+            Copy your
+            <strong>
+             API Key
+            </strong>
+            and
+            <strong>
+             Secret Key
+            </strong>
+            .
+           </li>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → Iyzico Tab
+            </strong>
+            , paste the keys.
+           </li>
+           <li>
+            Scroll to the
+            <strong>
+             Merchant Notifications
+            </strong>
+            section and add:
+            <br/>
+            <code>
+             https://yourdomain.com/webhook-iyzico
+            </code>
+           </li>
+           <li>
+            Save the configuration.
+           </li>
+          </ol>
+         </div>
+         <!-- Paystack -->
+         <div class="block" id="paystack">
+          <h3 class="h6 mb-3">
+           Paystack
+          </h3>
+          <ol>
+           <li>
+            Log in to your
+            <a href="https://paystack.com" target="_blank">
+             Paystack Dashboard
+            </a>
+            .
+           </li>
+           <li>
+            Go to
+            <strong>
+             Settings → API Keys &amp; Webhooks
+            </strong>
+            .
+           </li>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → Paystack Tab
+            </strong>
+            , paste the API keys.
+           </li>
+           <li>
+            In Paystack, set your Webhook URL to:
+            <br/>
+            <code>
+             https://yourdomain.com/webhook-paystack
+            </code>
+           </li>
+           <li>
+            Save changes.
+           </li>
+          </ol>
+         </div>
+         <!-- Razorpay -->
+         <div class="block" id="razorpay">
+          <h3 class="h6 mb-3">
+           Razorpay
+          </h3>
+          <ol>
+           <li>
+            Log in to your
+            <a href="https://razorpay.com" target="_blank">
+             Razorpay Dashboard
+            </a>
+            .
+           </li>
+           <li>
+            Go to
+            <strong>
+             Settings → API Keys
+            </strong>
+            and generate keys.
+           </li>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → Razorpay Tab
+            </strong>
+            , paste the keys.
+           </li>
+           <li>
+            Go to
+            <strong>
+             Settings → Webhooks
+            </strong>
+            and click
+            <strong>
+             Add New Webhook
+            </strong>
+            .
+           </li>
+           <li>
+            Set the Webhook URL:
+            <br/>
+            <code>
+             https://yourdomain.com/webhook-razorpay
+            </code>
+           </li>
+           <li>
+            Create a new Webhook Secret (like a password).
+           </li>
+           <li>
+            Enable these events:
+            <ul>
+             <li>
+              <code>
+               subscription.charged
+              </code>
+             </li>
+             <li>
+              <code>
+               payment_link.paid
+              </code>
+             </li>
+            </ul>
+           </li>
+           <li>
+            Save the webhook, then paste the secret into the Razorpay tab in your
+            <strong>
+             Admin Panel
+            </strong>
+            .
+           </li>
+          </ol>
+         </div>
+         <!-- Mollie -->
+         <div class="block" id="mollie">
+          <h3 class="h6 mb-3">
+           Mollie
+          </h3>
+          <ol>
+           <li>
+            Log in to your
+            <a href="https://mollie.com" target="_blank">
+             Mollie Dashboard
+            </a>
+            .
+           </li>
+           <li>
+            Go to
+            <strong>
+             Developers → API Keys
+            </strong>
+            and copy your Live API Key.
+           </li>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → Mollie Tab
+            </strong>
+            , paste the key.
+           </li>
+           <li>
+            Activate allowed payment methods in your Mollie account.
+           </li>
+          </ol>
+         </div>
+         <!-- Yookassa -->
+         <div class="block" id="yookassa">
+          <h3 class="h6 mb-3">
+           Yookassa
+          </h3>
+          <ol>
+           <li>
+            Log in to your
+            <a href="https://yookassa.ru" target="_blank">
+             Yookassa Dashboard
+            </a>
+            .
+           </li>
+           <li>
+            Go to
+            <strong>
+             Developers → API Keys
+            </strong>
+            and generate keys.
+           </li>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → Yookassa Tab
+            </strong>
+            , paste the keys.
+           </li>
+           <li>
+            Go to
+            <strong>
+             Integration → HTTP Notifications
+            </strong>
+            and add:
+            <br/>
+            <code>
+             https://yourdomain.com/webhook-yookassa
+            </code>
+           </li>
+           <li>
+            Ensure receipts/invoices are enabled for compliance.
+           </li>
+          </ol>
+         </div>
+         <!-- Paddle -->
+         <div class="block" id="paddle">
+          <h3 class="h6 mb-3">
+           Paddle
+          </h3>
+          <ol>
+           <li>
+            Log in to the
+            <a href="https://vendors.paddle.com" target="_blank">
+             Paddle Vendors Dashboard
+            </a>
+            .
+           </li>
+           <li>
+            Go to
+            <strong>
+             Developer Tools → Authentication
+            </strong>
+            and copy your Vendor ID and API Key.
+           </li>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → Paddle Tab
+            </strong>
+            , paste the Vendor ID and API Key.
+           </li>
+           <li>
+            Go to
+            <strong>
+             Developer Tools → Public Key
+            </strong>
+            and copy it into the
+            <strong>
+             Public Key
+            </strong>
+            field in your
+            <strong>
+             Admin Panel
+            </strong>
+            .
+           </li>
+          </ol>
+         </div>
+         <!-- Midtrans -->
+         <div class="block" id="midtrans">
+          <h3 class="h6 mb-3">
+           Midtrans
+          </h3>
+          <ol>
+           <li>
+            Log in to the
+            <a href="https://dashboard.midtrans.com" target="_blank">
+             Midtrans Dashboard
+            </a>
+            .
+           </li>
+           <li>
+            Go to
+            <strong>
+             Settings → Access Keys
+            </strong>
+            and copy your
+            <strong>
+             Server Key
+            </strong>
+            .
+           </li>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → Midtrans Tab
+            </strong>
+            , paste the Server Key.
+           </li>
+          </ol>
+         </div>
+         <!-- Flutterwave -->
+         <div class="block" id="flutterwave">
+          <h3 class="h6 mb-3">
+           Flutterwave
+          </h3>
+          <ol>
+           <li>
+            Log in to the
+            <a href="https://app.flutterwave.com/dashboard/home" target="_blank">
+             Flutterwave Dashboard
+            </a>
+            .
+           </li>
+           <li>
+            Go to
+            <strong>
+             Settings → API Keys
+            </strong>
+            and copy your Secret Key.
+           </li>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → Flutterwave Tab
+            </strong>
+            , paste the Secret Key.
+           </li>
+           <li>
+            Go to the Flutterwave
+            <strong>
+             Webhooks
+            </strong>
+            page and add:
+            <br/>
+            <code>
+             https://yourdomain.com/webhook-flutterwave
+            </code>
+           </li>
+          </ol>
+         </div>
+         <!-- LemonSqueezy -->
+         <div class="block" id="lemonsqueezy">
+          <h3 class="h6 mb-3">
+           LemonSqueezy
+          </h3>
+          <ol>
+           <li>
+            Log in to
+            <a href="https://www.lemonsqueezy.com/" target="_blank">
+             LemonSqueezy
+            </a>
+            .
+           </li>
+           <li>
+            Create a product in LemonSqueezy.
+           </li>
+           <li>
+            Create variants for:
+            <ul>
+             <li>
+              One-time Payments (Monthly, Quarterly, Biannual, Annual, Lifetime)
+             </li>
+             <li>
+              Recurring Payments (Monthly, Annual)
+             </li>
+            </ul>
+           </li>
+           <li>
+            Go to
+            <strong>
+             Settings → API Keys
+            </strong>
+            and generate an API key.
+           </li>
+           <li>
+            In your
+            <strong>
+             Admin Panel
+            </strong>
+            →
+            <strong>
+             Website Settings → LemonSqueezy Tab
+            </strong>
+            , paste:
+            <ul>
+             <li>
+              <strong>
+               API Key
+              </strong>
+             </li>
+             <li>
+              <strong>
+               Store ID
+              </strong>
+              (found in store settings)
+             </li>
+             <li>
+              Each
+              <strong>
+               Variant ID
+              </strong>
+              for your products
+             </li>
+            </ul>
+           </li>
+           <li>
+            Go to
+            <strong>
+             Settings → Webhooks
+            </strong>
+            and create a webhook with URL:
+            <br/>
+            <code>
+             https://yourdomain.com/webhook-lemonsqueezy
+            </code>
+           </li>
+           <li>
+            Select events:
+            <ul>
+             <li>
+              <code>
+               order_created
+              </code>
+             </li>
+             <li>
+              <code>
+               subscription_payment_success
+              </code>
+             </li>
+            </ul>
+           </li>
+           <li>
+            Copy the
+            <strong>
+             Signing Secret
+            </strong>
+            and paste it into the LemonSqueezy tab in your
+            <strong>
+             Admin Panel
+            </strong>
+            .
+           </li>
+          </ol>
+         </div>
+        </section>
+       </div>
+      </div>
+      <div class="card bg-gray-50 mb-5">
+       <div class="card-body">
+        <section id="taxes">
+         <h2 class="h5">
+          Taxes &amp; Billing
+         </h2>
+         <p class="text-muted">
+          Our tax system allows you to seamlessly integrate tax charges into user transactions. You can create and tailor taxes according to your requirements and link them with any specific plan.
+         </p>
+         <ol>
+          <li>
+           Activate the
+           <strong>
+            Taxes &amp; Billing system
+           </strong>
+           via
+           <strong>
+            Admin Panel
+           </strong>
+           -&gt;
+           <strong>
+            Website Settings
+           </strong>
+           -&gt;
+           <strong>
+            Payment tab
+           </strong>
+           .
+          </li>
+          <li>
+           This feature enables users to input their billing information at checkout and allows you to attach taxes to paid plans.
+          </li>
+          <li>
+           Access the system through
+           <strong>
+            Admin Panel
+           </strong>
+           -&gt;
+           <strong>
+            Taxes
+           </strong>
+           .
+          </li>
+          <li>
+           Create a new tax by selecting the
+           <strong>
+            Create Tax
+           </strong>
+           button.
+          </li>
+          <li>
+           After creating a tax, visit
+           <strong>
+            Admin Panel
+           </strong>
+           -&gt;
+           <strong>
+            Plans
+           </strong>
+           , choose a paid plan, and apply the desired tax.
+          </li>
+         </ol>
+         <div class="alert alert-info mb-0" role="alert">
+          Avoid deleting taxes that are currently linked to payments. They can be detached from Plans if no longer required. This ensures that customers who have purchased a plan with a specific tax can still view the correct tax amount on their invoices for that transaction.
+         </div>
+        </section>
+       </div>
+      </div>
+      <div class="card bg-gray-50 mb-5">
+       <div class="card-body">
+        <section id="multicurrency">
+         <h2 class="h5">
+          Multicurrency
+         </h2>
+         <p class="text-muted">
+          Our multicurrency feature enables users to select from various currencies you provide.
+         </p>
+         <p>
+          Configure this option in the
+          <strong>
+           Admin Panel
+          </strong>
+          -&gt;
+          <strong>
+           Website Settings
+          </strong>
+          -&gt;
+          <strong>
+           Payment tab
+          </strong>
+         </p>
+         <p>
+          Set distinct prices for each currency of a plan by modifying it through the
+          <strong>
+           Admin Panel
+          </strong>
+          -&gt;
+          <strong>
+           Plans
+          </strong>
+          page.
+         </p>
+         <p>
+          Enable or disable specific currencies for each payment processor by adjusting the settings in the
+          <strong>
+           Admin Panel
+          </strong>
+          -&gt;
+          <strong>
+           Website Settings
+          </strong>
+          page.
+         </p>
+         <p>
+          For multiple currency usage, obtain an API key from
+          <a href="https://freecurrencyapi.com/" rel="nofollow noreferrer" target="_blank">
+           FreeCurrencyAPI.com
+          </a>
+          and integrate it into your
+          <strong>
+           Admin Panel
+          </strong>
+          -&gt;
+          <strong>
+           Website Settings
+          </strong>
+          -&gt;
+          <strong>
+           Payment tab
+          </strong>
+          .
+         </p>
+         <p class="mb-0">
+          While the API key is optional, it's recommended for automatically converting transactions into the default currency, ensuring precise and consistent statistics for administrative analysis.
+         </p>
+        </section>
+       </div>
+      </div>
+      <div class="card bg-gray-50 mb-5">
+       <div class="card-body">
+        <section id="google-safe-browsing">
+         <h2 class="h5">
+          Google Safe Browsing
+         </h2>
+         <p class="text-muted">
+          The Safe Browsing integration will automatically check all url's that are submitted by your users with Google to see if they are malware, spam or any other threats.
+         </p>
+         <ol>
+          <li>
+           Go to
+           <a href="https://console.developers.google.com/apis/dashboard" target="_blank">
+            Google Developers Console
+           </a>
+           page and make sure you are logged in.
+          </li>
+          <li>
+           Now you need to create a new project.
+          </li>
+          <li>
+           Now you need to search for the
+           <strong>
+            SafeBrowsing API
+           </strong>
+           in the API Library and make sure to enable it.
+          </li>
+          <li>
+           Go to the
+           <strong>
+            Credentials
+           </strong>
+           page by clicking on the link in the sidebar.
+          </li>
+          <li>
+           Click on the
+           <strong>
+            Create Credentials
+           </strong>
+           button and select
+           <strong>
+            API Key
+           </strong>
+          </li>
+          <li>
+           Copy your freshly created API Key
+          </li>
+          <li>
+           Go to your Product's
+           <strong>
+            Admin Panel
+           </strong>
+           -&gt;
+           <strong>
+            Website Settings
+           </strong>
+           -&gt;
+           <strong>
+            Links
+           </strong>
+           and enter the
+           <strong>
+            Google Safe Browsing API Key
+           </strong>
+           that you copied.
+          </li>
+         </ol>
+        </section>
+       </div>
+      </div>
+      <div class="card bg-gray-50 mb-5">
+       <div class="card-body">
+        <section id="google-static-maps">
+         <h2 class="h5">
+          Google Static Maps
+         </h2>
+         <p class="text-muted">
+          The Static Maps integration will give your users the ability to use the Map block to display maps from Google maps on their biolink pages.
+         </p>
+         <ol>
+          <li>
+           Go to
+           <a href="https://console.developers.google.com/apis/dashboard" target="_blank">
+            Google Developers Console
+           </a>
+           page and make sure you are logged in.
+          </li>
+          <li>
+           Now you need to create a new project.
+          </li>
+          <li>
+           Now you need to search for the
+           <strong>
+            Maps Static API
+           </strong>
+           in the API Library and make sure to enable it.
+          </li>
+          <li>
+           Go to the
+           <strong>
+            Credentials
+           </strong>
+           page by clicking on the link in the sidebar.
+          </li>
+          <li>
+           Click on the
+           <strong>
+            Create Credentials
+           </strong>
+           button and select
+           <strong>
+            API Key
+           </strong>
+          </li>
+          <li>
+           Copy your freshly created API Key
+          </li>
+          <li>
+           Go to your Product's
+           <strong>
+            Admin Panel
+           </strong>
+           -&gt;
+           <strong>
+            Website Settings
+           </strong>
+           -&gt;
+           <strong>
+            Links
+           </strong>
+           and enter the
+           <strong>
+            Google Static Maps API Key
+           </strong>
+           that you copied.
+          </li>
+          <li>
+           <strong>
+            Important notes:
+           </strong>
+           Make sure to only whitelist the domains that you want the API to work on, via the Google platform. The Google Static Maps API is paid, be careful.
+          </li>
+         </ol>
+        </section>
+       </div>
+      </div>
+      <div class="card bg-gray-50 mb-5">
+       <div class="card-body">
+        <section class="block mt-0" id="domains">
+         <h2 class="h5">
+          Custom domains
+         </h2>
+         <p>
+          Setting up additional custom domains will give you and your users the ability to use additional domains besides the main one when creating certain resources.
+         </p>
+         <p>
+          To add multiple domains, go to the
+          <strong>
+           Admin Panel
+          </strong>
+          and navigate to the
+          <strong>
+           Domains
+          </strong>
+          page.
+         </p>
+         <p>
+          Ensure the new domain or subdomain has an A record pointing to your host's IP, or a CNAME record pointing to your websites installation host (example.com).
+         </p>
+         <p>
+          The connection of the domain with the host can be different for each hosting platform in particular.
+         </p>
+         <p class="font-weight-bold mt-4">
+          I am on a shared webhost
+         </p>
+         <p>
+          If your website is hosted on a shared webhost with panels like
+          <strong>
+           cPanel
+          </strong>
+          , visit the
+          <strong>
+           Addon Domain / Domains
+          </strong>
+          page in your cPanel and add the extra domain you intend to use.
+         </p>
+         <p>
+          Ensure that the
+          <strong>
+           Root Directory
+          </strong>
+          of the new domain is set to the same directory as the already existing Product Installation.
+         </p>
+         <p>
+          Ensure to issue an SSL certificate for the new domain as well.
+         </p>
+         <p class="font-weight-bold mt-4">
+          I am on a VPS / Dedicated Server
+         </p>
+         <p>
+          This process might require technical assistance from a server administrator, as it can be completely different based on your current host and setup.
+         </p>
+         <p>
+          Ensure that the new domain is set up properly and attached to your server.
+         </p>
+         <p>
+          Ensure to issue an SSL certificate for the new domain as well.
+         </p>
+        </section>
+       </div>
+      </div>
+      <div class="card bg-gray-50 mb-5">
+       <div class="card-body">
+        <section id="notification-handlers">
+         <h2 class="h5">
+          Notification handlers
+         </h2>
+         <div class="block" id="twilio">
+          <h3 class="h6 mb-3">
+           Twilio notification handler (SMS &amp; Call)
+          </h3>
+          <ol>
+           <li>
+            Go to
+            <a href="https://console.twilio.com/" target="_blank">
+             Twilio Console
+            </a>
+            and make sure to login to your account.
+           </li>
+           <li>
+            Get a phone number from Twilio and then scroll down in the Console Dashboard to see the
+            <strong>
+             Account info
+            </strong>
+            section.
+           </li>
+           <li>
+            Go to your
+            <strong>
+             product installation
+            </strong>
+            -&gt;
+            <strong>
+             Admin panel
+            </strong>
+            -&gt;
+            <strong>
+             Settings
+            </strong>
+            -&gt;
+            <strong>
+             Notification handlers
+            </strong>
+            page.
+           </li>
+           <li>
+            Enable the Twilio notification handler while also copying the
+            <strong>
+             Account SID
+            </strong>
+            ,
+            <strong>
+             Account token
+            </strong>
+            &amp;
+            <strong>
+             Phone number
+            </strong>
+            from Twilio and pasting it their respective fields.
+           </li>
+           <li>
+            To enable different regions for Twilio SMS, go to
+            <strong>
+             Twilio Console
+            </strong>
+            -&gt;
+            <strong>
+             Messaging
+            </strong>
+            -&gt;
+            <strong>
+             Settings
+            </strong>
+            -&gt;
+            <strong>
+             Geo Permissions
+            </strong>
+            page.
+           </li>
+           <li>
+            To enable different regions for Twilio calling, go to
+            <a href="https://www.twilio.com/console/voice/calls/geo-permissions/low-risk" target="_blank">
+             Voice Geographic Permissions
+            </a>
+            page.
+           </li>
+          </ol>
+         </div>
+         <div class="block" id="whatsapp">
+          <h3 class="h6 mb-3">
+           Whatsapp notification handler (Whatsapp message)
+          </h3>
+          <ol>
+           <li>
+            Go to
+            <a href="https://developers.facebook.com/" target="_blank">
+             Facebook Developers
+            </a>
+            page.
+           </li>
+           <li>
+            Make sure to login to your Facebook account.
+           </li>
+           <li>
+            Click on the
+            <strong>
+             My Apps
+            </strong>
+            menu dropdown and click on
+            <strong>
+             Create app
+            </strong>
+            .
+           </li>
+           <li>
+            Select the
+            <strong>
+             Other
+            </strong>
+            use case and continue.
+           </li>
+           <li>
+            Select the
+            <strong>
+             Business
+            </strong>
+            app type and continue.
+           </li>
+           <li>
+            Fill the other needed fields and continue (Make sure to attach your Business Account).
+           </li>
+           <li>
+            After finishing it up, choose
+            <strong>
+             Add Product
+            </strong>
+            from the sidebar of your dashboard.
+           </li>
+           <li>
+            Make sure you add the
+            <strong>
+             WhatsApp
+            </strong>
+            product to your app.
+           </li>
+           <li>
+            After that, go to
+            <strong>
+             WhatsApp
+            </strong>
+            -&gt;
+            <strong>
+             API Setup
+            </strong>
+            page.
+           </li>
+           <li>
+            Add your own business
+            <strong>
+             From phone number
+            </strong>
+            and confirm it.
+           </li>
+           <li>
+            Copy your
+            <strong>
+             Phone number ID
+            </strong>
+            and paste it into the
+            <strong>
+             product installation
+            </strong>
+            -&gt;
+            <strong>
+             Admin panel
+            </strong>
+            -&gt;
+            <strong>
+             Settings
+            </strong>
+            -&gt;
+            <strong>
+             Notification handlers
+            </strong>
+            page.
+           </li>
+           <li>
+            Open the
+            <a href="https://developers.facebook.com/blog/post/2022/12/05/auth-tokens/" target="_blank">
+             Auth token documentation
+            </a>
+            from Facebook and get your Permanent Access token, so that you can paste it into the same page in your installation as above.
+           </li>
+           <li>
+            After that, go to
+            <strong>
+             WhatsApp
+            </strong>
+            -&gt;
+            <strong>
+             Quickstart page
+            </strong>
+            -&gt;
+            <strong>
+             Message templates
+            </strong>
+            page.
+           </li>
+           <li>
+            Now you must create a template for each type of notification you will send out, do it as per the data below.
+           </li>
+          </ol>
+          <div class="accordion mt-4">
+           <div class="card">
+            <div class="card-header">
+             <h2 class="mb-0">
+              <button aria-controls="test_notification_handler" aria-expanded="true" class="btn btn-link btn-block text-left collapsed" data-target="#test_notification_handler" data-toggle="collapse" type="button">
+               🧑‍💻️ Integration test
+              </button>
+             </h2>
+            </div>
+            <div class="collapse" id="test_notification_handler">
+             <div class="card-body">
+              <div class="table-responsive table-custom-container mb-4">
+               <table class="table table-custom">
+                <tbody>
+                 <tr>
+                  <td class="font-weight-bold">
+                   Name
+                  </td>
+                  <td>
+                   test_notification_handler
+                  </td>
+                 </tr>
+                 <tr>
+                  <td class="font-weight-bold">
+                   Language
+                  </td>
+                  <td>
+                   English
+                  </td>
+                 </tr>
+                 <tr>
+                  <td class="font-weight-bold">
+                   Category
+                  </td>
+                  <td>
+                   Utility
+                  </td>
+                 </tr>
+                 <tr>
+                  <td class="font-weight-bold">
+                   Content
+                  </td>
+                  <td>
+                   <pre>This is a test message.</pre>
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="card">
+            <div class="card-header">
+             <h2 class="mb-0">
+              <button aria-controls="guest_payment" aria-expanded="true" class="btn btn-link btn-block text-left collapsed" data-target="#guest_payment" data-toggle="collapse" type="button">
+               💸 Guest payment
+              </button>
+             </h2>
+            </div>
+            <div class="collapse" id="guest_payment">
+             <div class="card-body">
+              <div class="table-responsive table-custom-container mb-4">
+               <table class="table table-custom">
+                <tbody>
+                 <tr>
+                  <td class="font-weight-bold">
+                   Name
+                  </td>
+                  <td>
+                   guest_payment
+                  </td>
+                 </tr>
+                 <tr>
+                  <td class="font-weight-bold">
+                   Language
+                  </td>
+                  <td>
+                   English
+                  </td>
+                 </tr>
+                 <tr>
+                  <td class="font-weight-bold">
+                   Category
+                  </td>
+                  <td>
+                   Utility
+                  </td>
+                 </tr>
+                 <tr>
+                  <td class="font-weight-bold">
+                   Content
+                  </td>
+                  <td>
+                   <pre>You sold '{{1}}' for {{2}} {{3}} 💰.
+View all details at {{4}} 🔗</pre>
+                  </td>
+                 </tr>
+                 <tr>
+                  <td class="font-weight-bold">
+                   Sample {{1}}
+                  </td>
+                  <td>
+                   Example
+                  </td>
+                 </tr>
+                 <tr>
+                  <td class="font-weight-bold">
+                   Sample {{2}}
+                  </td>
+                  <td>
+                   55
+                  </td>
+                 </tr>
+                 <tr>
+                  <td class="font-weight-bold">
+                   Sample {{3}}
+                  </td>
+                  <td>
+                   USD
+                  </td>
+                 </tr>
+                 <tr>
+                  <td class="font-weight-bold">
+                   Sample {{4}}
+                  </td>
+                  <td>
+                   https://YOUR_DOMAIN_HERE/url/1
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </div>
+             </div>
+            </div>
+           </div>
+           <div class="card">
+            <div class="card-header">
+             <h2 class="mb-0">
+              <button aria-controls="caught_data" aria-expanded="true" class="btn btn-link btn-block text-left collapsed" data-target="#caught_data" data-toggle="collapse" type="button">
+               🔥 Caught data
+              </button>
+             </h2>
+            </div>
+            <div class="collapse" id="caught_data">
+             <div class="card-body">
+              <div class="table-responsive table-custom-container mb-4">
+               <table class="table table-custom">
+                <tbody>
+                 <tr>
+                  <td class="font-weight-bold">
+                   Name
+                  </td>
+                  <td>
+                   caught_data
+                  </td>
+                 </tr>
+                 <tr>
+                  <td class="font-weight-bold">
+                   Language
+                  </td>
+                  <td>
+                   English
+                  </td>
+                 </tr>
+                 <tr>
+                  <td class="font-weight-bold">
+                   Category
+                  </td>
+                  <td>
+                   Utility
+                  </td>
+                 </tr>
+                 <tr>
+                  <td class="font-weight-bold">
+                   Content
+                  </td>
+                  <td>
+                   <pre>Caught new submitted data to your biolink block '{{1}}' for '{{2}}' url.
+View all details at {{3}} 🔗</pre>
+                  </td>
+                 </tr>
+                 <tr>
+                  <td class="font-weight-bold">
+                   Sample {{1}}
+                  </td>
+                  <td>
+                   Example
+                  </td>
+                 </tr>
+                 <tr>
+                  <td class="font-weight-bold">
+                   Sample {{2}}
+                  </td>
+                  <td>
+                   Sample
+                  </td>
+                 </tr>
+                 <tr>
+                  <td class="font-weight-bold">
+                   Sample {{3}}
+                  </td>
+                  <td>
+                   https://YOUR_DOMAIN_HERE/data/1
+                  </td>
+                 </tr>
+                </tbody>
+               </table>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </section>
+       </div>
+      </div>
+      <div class="card bg-gray-50 mb-5">
+       <div class="card-body">
+        <section id="faq">
+         <h2 class="h5">
+          Frequently asked questions
+         </h2>
+         <p>
+         </p>
+         <div class="accordion">
+          <div class="card">
+           <div class="card-header">
+            <h2 class="mb-0">
+             <button aria-controls="faq_one" aria-expanded="true" class="btn btn-link btn-block text-left text-muted" data-target="#faq_one" data-toggle="collapse" type="button">
+              📝 How can I update text on the website?
+             </button>
+            </h2>
+           </div>
+           <div class="collapse" data-parent="#faq_one" id="faq_one">
+            <div class="card-body">
+             Any static text from the website can be changed from the
+             <strong>
+              Admin Panel
+             </strong>
+             -&gt;
+             <strong>
+              Languages
+             </strong>
+             system, or via the
+             <code>
+              app/languages/english#en.php
+             </code>
+             file for the frontend part. The admin panel translations are found in the
+             <code>
+              app/languages/admin/english#en.php
+             </code>
+             file.
+            </div>
+           </div>
+          </div>
+          <div class="card">
+           <div class="card-header">
+            <h2 class="mb-0">
+             <button aria-controls="faq_eleven" aria-expanded="true" class="btn btn-link btn-block text-left text-muted" data-target="#faq_eleven" data-toggle="collapse" type="button">
+              ✍️ Why can't I edit all the language strings in the admin panel?
+             </button>
+            </h2>
+           </div>
+           <div class="collapse" data-parent="#faq_eleven" id="faq_eleven">
+            <div class="card-body">
+             That is most likely because your webhost settings does not allow you, please read the information message at the top of the language update / create page and ask your webhost provider to change it for you.
+            </div>
+           </div>
+          </div>
+          <div class="card">
+           <div class="card-header">
+            <h2 class="mb-0">
+             <button aria-controls="faq_two" aria-expanded="true" class="btn btn-link btn-block text-left text-muted" data-target="#faq_two" data-toggle="collapse" type="button">
+              🌎 How can I create/translate it into my own language?
+             </button>
+            </h2>
+           </div>
+           <div class="collapse" data-parent="#faq_two" id="faq_two">
+            <div class="card-body">
+             You can either use the
+             <strong>
+              Admin panel
+             </strong>
+             -&gt;
+             <strong>
+              Languages
+             </strong>
+             system to easily create or edit a language, or: Duplicate the
+             <code>
+              app/languages/english#en.php
+             </code>
+             file, rename the duplicated file to your actual language name and start editing the newly created file. The same process needs to happen for the admin panel translations,
+             <code>
+              app/languages/admin/english#en.php
+             </code>
+             .
+            </div>
+           </div>
+          </div>
+          <div class="card">
+           <div class="card-header">
+            <h2 class="mb-0">
+             <button aria-controls="faq_wee" aria-expanded="true" class="btn btn-link btn-block text-left text-muted" data-target="#faq_wee" data-toggle="collapse" type="button">
+              ❕ What's the best way to change the English language without losing changes when updating?
+             </button>
+            </h2>
+           </div>
+           <div class="collapse" data-parent="#faq_wee" id="faq_wee">
+            <div class="card-body">
+             <p>
+              If you want to keep the main language to English, but you still want to edit the already existing English strings, then the best way would be to create a new language pack and only translate the strings you wish to change.
+             </p>
+             <p>
+              After that, make sure to disable the original English language pack.
+             </p>
+             <p>
+              This way, when you update the product, you get all the latest English strings which come from the latest update, and you get to keep your custom changes (since you run the custom language pack).
+             </p>
+             <p>
+              The default English language pack will always be used as fallback. So if you did not translate certain strings, they will fallback to the orignal English file.
+             </p>
+            </div>
+           </div>
+          </div>
+          <div class="card">
+           <div class="card-header">
+            <h2 class="mb-0">
+             <button aria-controls="faq_three" aria-expanded="true" class="btn btn-link btn-block text-left text-muted" data-target="#faq_three" data-toggle="collapse" type="button">
+              ⚠️ When I click on any link it returns 404 Not Found, why?
+             </button>
+            </h2>
+           </div>
+           <div class="collapse" data-parent="#faq_three" id="faq_three">
+            <div class="card-body">
+             <p>
+              In the vast majority of cases, this is caused by either one of those cases:
+             </p>
+             <ul>
+              <li>
+               You do not have the
+               <code>
+                .htaccess
+               </code>
+               file uploaded.
+              </li>
+              <li>
+               Your web host provider does not have
+               <code>
+                mod_rewrite
+               </code>
+               enabled for Apache.
+              </li>
+              <li>
+               The
+               <code>
+                .htaccess
+               </code>
+               file exists, but the content is not the same as the original file from my product.
+              </li>
+              <li>
+               You run on Nginx and you have not configured the
+               <a href="#nginx">
+                rewrite rules
+               </a>
+               .
+              </li>
+             </ul>
+             <p>
+              Please, triple check these.
+             </p>
+            </div>
+           </div>
+          </div>
+          <div class="card">
+           <div class="card-header">
+            <h2 class="mb-0">
+             <button aria-controls="faq_omega" aria-expanded="true" class="btn btn-link btn-block text-left text-muted" data-target="#faq_omega" data-toggle="collapse" type="button">
+              ⛔️ I get 503 internal server error, why?
+             </button>
+            </h2>
+           </div>
+           <div class="collapse" data-parent="#faq_omega" id="faq_omega">
+            <div class="card-body">
+             <ul>
+              <li>
+               If you run a server which supports
+               <code>
+                .htaccess
+               </code>
+               , some servers might not accept the first line of the
+               <code>
+                .htaccess
+               </code>
+               file. Try to delete the first line on the
+               <code>
+                .htaccess
+               </code>
+               file.
+              </li>
+              <li>
+               If you get this error when submitting a form, this means that your webhost blocked the request. Try to disable
+               <code>
+                mod_security
+               </code>
+               , as it may trigger a false-positive, or contact your webhost provider.
+              </li>
+             </ul>
+             <p>
+              Please, triple check these.
+             </p>
+            </div>
+           </div>
+          </div>
+          <div class="card">
+           <div class="card-header">
+            <h2 class="mb-0">
+             <button aria-controls="faq_mey" aria-expanded="true" class="btn btn-link btn-block text-left text-muted" data-target="#faq_mey" data-toggle="collapse" type="button">
+              🧟 I get spam user registrations, how can I prevent them?
+             </button>
+            </h2>
+           </div>
+           <div class="collapse" data-parent="#faq_mey" id="faq_mey">
+            <div class="card-body">
+             <p>
+              Spam registrations can not ever be fully prevented. No website can do fully get rid of spam. My products offer a lot of spam protection measures, so you would simply have to use them.
+             </p>
+             <ul>
+              <li>
+               <strong>
+                Email confirmation
+               </strong>
+               - Set from the
+               <strong>
+                Admin panel
+               </strong>
+               -&gt;
+               <strong>
+                Website Settings
+               </strong>
+               -&gt;
+               <strong>
+                Users
+               </strong>
+               section.
+              </li>
+              <li>
+               <strong>
+                Captcha
+               </strong>
+               - Set from the
+               <strong>
+                Admin panel
+               </strong>
+               -&gt;
+               <strong>
+                Website Settings
+               </strong>
+               -&gt;
+               <strong>
+                Captcha
+               </strong>
+               section.
+              </li>
+              <li>
+               <strong>
+                Country block
+               </strong>
+               - Set from the
+               <strong>
+                Admin panel
+               </strong>
+               -&gt;
+               <strong>
+                Website Settings
+               </strong>
+               -&gt;
+               <strong>
+                Users
+               </strong>
+               section.
+              </li>
+              <li>
+               <strong>
+                Email domain block
+               </strong>
+               - Set from the
+               <strong>
+                Admin panel
+               </strong>
+               -&gt;
+               <strong>
+                Website Settings
+               </strong>
+               -&gt;
+               <strong>
+                Users
+               </strong>
+               section.
+              </li>
+              <li>
+               <strong>
+                Auto delete unconfirmed / old users
+               </strong>
+               - Set from the
+               <strong>
+                Admin panel
+               </strong>
+               -&gt;
+               <strong>
+                Website Settings
+               </strong>
+               -&gt;
+               <strong>
+                Users
+               </strong>
+               section.
+              </li>
+              <li>
+               <strong>
+                Bulk deletion of users
+               </strong>
+               - Set from the
+               <strong>
+                Admin panel
+               </strong>
+               -&gt;
+               <strong>
+                Users
+               </strong>
+               page. In case you want to delete a lot of users in bulk.
+              </li>
+             </ul>
+            </div>
+           </div>
+          </div>
+          <div class="card">
+           <div class="card-header">
+            <h2 class="mb-0">
+             <button aria-controls="faq_four" aria-expanded="true" class="btn btn-link btn-block text-left text-muted" data-target="#faq_four" data-toggle="collapse" type="button">
+              🗺️ Is there any sitemap?
+             </button>
+            </h2>
+           </div>
+           <div class="collapse" data-parent="#faq_four" id="faq_four">
+            <div class="card-body">
+             Yes, you can access the sitemap by accessing the
+             <code>
+              /sitemap
+             </code>
+             path on the website.
+            </div>
+           </div>
+          </div>
+          <div class="card">
+           <div class="card-header">
+            <h2 class="mb-0">
+             <button aria-controls="faq_five" aria-expanded="true" class="btn btn-link btn-block text-left text-muted" data-target="#faq_five" data-toggle="collapse" type="button">
+              📧 Emails are not sending / I have errors with my SMTP.
+             </button>
+            </h2>
+           </div>
+           <div class="collapse" data-parent="#faq_five" id="faq_five">
+            <div class="card-body">
+             All errors related to the email sending system are caused by either: Incorrect SMTP credentials, not properly working SMTP server, or web host blocking the actual SMTP connection. For any of these issues, contact your SMTP or web host provider.
+            </div>
+           </div>
+          </div>
+          <div class="card">
+           <div class="card-header">
+            <h2 class="mb-0">
+             <button aria-controls="faq_six" aria-expanded="true" class="btn btn-link btn-block text-left text-muted" data-target="#faq_six" data-toggle="collapse" type="button">
+              ✨ How to customize the index landing page?
+             </button>
+            </h2>
+           </div>
+           <div class="collapse" data-parent="#faq_six" id="faq_six">
+            <div class="card-body">
+             <p>
+              This can be done in multiple ways. You can either edit the actual content by editing the
+              <code>
+               themes/altum/views/index/index.php
+              </code>
+              file, editing the language file for text changes, or the
+              <code>
+               themes/altum/assets/images/
+              </code>
+              folder for changing any images.
+             </p>
+             <p>
+              The second way would be to have a fully custom landing page, and redirecting (disabling) the default landing page, by editing &amp; pasting the new landing page URL in the
+              <strong>
+               Custom landing page URL
+              </strong>
+              field in the
+              <strong>
+               Admin panel
+              </strong>
+              -&gt;
+              <strong>
+               Website settings
+              </strong>
+              -&gt;
+              <strong>
+               Custom landing page URL
+              </strong>
+              field.
+             </p>
+            </div>
+           </div>
+          </div>
+          <div class="card">
+           <div class="card-header">
+            <h2 class="mb-0">
+             <button aria-controls="faq_seven" aria-expanded="true" class="btn btn-link btn-block text-left text-muted" data-target="#faq_seven" data-toggle="collapse" type="button">
+              🧑‍💻 I try to make an API request, but I get "The request is missing the Bearer Authentication header".
+             </button>
+            </h2>
+           </div>
+           <div class="collapse" data-parent="#faq_seven" id="faq_seven">
+            <div class="card-body">
+             You are either not sending the Bearer Authentication header properly, or your web host provider is dropping that header before it reaches my product. In such case, you need to contact your web host provider, or you can personally try a quick fix, which might work for some people:
+             <a href="https://stackoverflow.com/questions/26549250/apache-strips-down-authorization-header" target="_blank">
+              https://stackoverflow.com/questions/26549250/apache-strips-down-authorization-header
+             </a>
+            </div>
+           </div>
+          </div>
+          <div class="card">
+           <div class="card-header">
+            <h2 class="mb-0">
+             <button aria-controls="faq_eight" aria-expanded="true" class="btn btn-link btn-block text-left text-muted" data-target="#faq_eight" data-toggle="collapse" type="button">
+              🎨 How to customize the colors or other design aspects (CSS) of the site?
+             </button>
+            </h2>
+           </div>
+           <div class="collapse" data-parent="#faq_eight" id="faq_eight">
+            <div class="card-body">
+             <p>
+              This can be done in multiple ways, depending on your actual CSS/SCSS knowledge.
+             </p>
+             <ul>
+              <li>
+               <strong>
+                Easiest way
+               </strong>
+               : You can edit the theme colors directly
+               <strong>
+                Admin panel
+               </strong>
+               -&gt;
+               <strong>
+                Website settings
+               </strong>
+               -&gt;
+               <strong>
+                Theme
+               </strong>
+               page.
+              </li>
+              <li>
+               You can write your own custom css, that overwrites the already existing rules, and paste that in the
+               <strong>
+                Admin panel
+               </strong>
+               -&gt;
+               <strong>
+                Website settings
+               </strong>
+               -&gt;
+               <strong>
+                Custom CSS
+               </strong>
+               field.
+              </li>
+              <li>
+               You can manually replace the colors via the
+               <strong>
+                bootstrap
+               </strong>
+               CSS files in the
+               <code>
+                themes/altum/assets/css/
+               </code>
+               folder.
+              </li>
+              <li>
+               You can also fully modify the theme, by editing the
+               <strong>
+                bootstrap
+               </strong>
+               SCSS files in the
+               <code>
+                themes/altum/assets/css/
+               </code>
+               folder, recompile them back to CSS, and then overwrite the original CSS bootstrap files (advanced).
+              </li>
+             </ul>
+             <p class="font-weight-bold">
+              Keep in mind: Support for any kind of customizations is not included, so this is fully up to you.
+             </p>
+            </div>
+           </div>
+          </div>
+          <div class="card">
+           <div class="card-header">
+            <h2 class="mb-0">
+             <button aria-controls="faq_nine" aria-expanded="true" class="btn btn-link btn-block text-left text-muted" data-target="#faq_nine" data-toggle="collapse" type="button">
+              © How to change/remove the default AltumCode branding on the footer?
+             </button>
+            </h2>
+           </div>
+           <div class="collapse" data-parent="#faq_nine" id="faq_nine">
+            <div class="card-body">
+             You can do this via the
+             <strong>
+              Admin panel
+             </strong>
+             -&gt;
+             <strong>
+              Resources, Pages
+             </strong>
+             section.
+            </div>
+           </div>
+          </div>
+          <div class="card">
+           <div class="card-header">
+            <h2 class="mb-0">
+             <button aria-controls="faq_ten" aria-expanded="true" class="btn btn-link btn-block text-left text-muted" data-target="#faq_ten" data-toggle="collapse" type="button">
+              💳 Why can't I see the payments being recorded in the payments list after doing a test payment?
+             </button>
+            </h2>
+           </div>
+           <div class="collapse" data-parent="#faq_ten" id="faq_ten">
+            <div class="card-body">
+             That is most likely because you've skipped or misconfigured a step when configuring the payment gateway.
+            </div>
+           </div>
+          </div>
+          <div class="card">
+           <div class="card-header">
+            <h2 class="mb-0">
+             <button aria-controls="faq_twelve" aria-expanded="true" class="btn btn-link btn-block text-left text-muted" data-target="#faq_twelve" data-toggle="collapse" type="button">
+              🛍️ I created a discount code from the admin panel, why isn't it working when using it to pay?
+             </button>
+            </h2>
+           </div>
+           <div class="collapse" data-parent="#faq_twelve" id="faq_twelve">
+            <div class="card-body">
+             That is most likely because you did not associate the discount/redeemable code with the plan you want to use it on. Go to the
+             <strong>
+              Admin panel
+             </strong>
+             -&gt;
+             <strong>
+              Plans
+             </strong>
+             section, and update the plan that you want to associate the discount/redeemable code with.
+            </div>
+           </div>
+          </div>
+          <div class="card">
+           <div class="card-header">
+            <h2 class="mb-0">
+             <button aria-controls="faq_thirteen" aria-expanded="true" class="btn btn-link btn-block text-left text-muted" data-target="#faq_thirteen" data-toggle="collapse" type="button">
+              🧑‍💼 I lost my admin password &amp; I can't reset it, what to do?
+             </button>
+            </h2>
+           </div>
+           <div class="collapse" data-parent="#faq_thirteen" id="faq_thirteen">
+            <div class="card-body">
+             In this case, you'd need to access your database manager (such as phpMyAdmin), select the database of the installed product, go to the
+             <code>
+              users
+             </code>
+             table, find your admin account and set the password to
+             <code>
+              $2y$10$uFNO0pQKEHSFcus1zSFlveiPCB3EvG9ZlES7XKgJFTAl5JbRGFCWy
+             </code>
+             which equals to
+             <code>
+              admin
+             </code>
+             as the password. Now you need to find the
+             <code>
+              uploads/cache/
+             </code>
+             from the product installation files and delete the folder you see inside.
+            </div>
+           </div>
+          </div>
+          <div class="card">
+           <div class="card-header">
+            <h2 class="mb-0">
+             <button aria-controls="faq_incorrect_captcha" aria-expanded="true" class="btn btn-link btn-block text-left text-muted" data-target="#faq_incorrect_captcha" data-toggle="collapse" type="button">
+              🔐 I configured the captcha with a wrong API key, now I can't login. What can I do?
+             </button>
+            </h2>
+           </div>
+           <div class="collapse" data-parent="#faq_incorrect_captcha" id="faq_incorrect_captcha">
+            <div class="card-body">
+             <p>
+              In this case, you'd need to access your database manager (such as phpMyAdmin), select the database of the installed product, go to the
+              <code>
+               settings
+              </code>
+              table, find the
+              <code>
+               captcha
+              </code>
+              key and modify the
+              <code>
+               value
+              </code>
+              as following:
+             </p>
+             <p>
+              Find the
+              <code>
+               "login_is_enabled":true
+              </code>
+              part of the text and edit that to
+              <code>
+               "login_is_enabled":false
+              </code>
+              .
+             </p>
+             <p>
+              Now you need to find the
+              <code>
+               uploads/cache/
+              </code>
+              from the product installation files and delete the folder you see inside.
+             </p>
+            </div>
+           </div>
+          </div>
+          <div class="card">
+           <div class="card-header">
+            <h2 class="mb-0">
+             <button aria-controls="faq_atlas" aria-expanded="true" class="btn btn-link btn-block text-left text-muted" data-target="#faq_atlas" data-toggle="collapse" type="button">
+              🖥️ How can I migrate to another host?
+             </button>
+            </h2>
+           </div>
+           <div class="collapse" data-parent="#faq_fifteen" id="faq_atlas">
+            <div class="card-body">
+             You would first need to backup both the files and the database of your current installation. Then you would need to perform the actual migration to another host with the backup up files and database, and after that, you would simply need to edit the
+             <code>
+              config.php
+             </code>
+             file and make sure all the details inside are still correct.
+            </div>
+           </div>
+          </div>
+          <div class="card">
+           <div class="card-header">
+            <h2 class="mb-0">
+             <button aria-controls="faq_mars" aria-expanded="true" class="btn btn-link btn-block text-left text-muted" data-target="#faq_mars" data-toggle="collapse" type="button">
+              🔗 Custom domains do not show up in the app
+             </button>
+            </h2>
+           </div>
+           <div class="collapse" data-parent="#faq_mars" id="faq_mars">
+            <div class="card-body">
+             <p>
+              Make sure you check all the following steps if the custom domains that you added do not show up:
+             </p>
+             <ul>
+              <li>
+               Go in the
+               <strong>
+                Admin panel
+               </strong>
+               -&gt;
+               <strong>
+                Plans
+               </strong>
+               -&gt;
+               <strong>
+                Update plan
+               </strong>
+               and make sure to select the additional domains that you wish to enable.
+              </li>
+              <li>
+               <strong>
+                Important:
+               </strong>
+               If you are on a custom plan, you must edit that from the
+               <strong>
+                User update
+               </strong>
+               page in the
+               <strong>
+                Admin panel
+               </strong>
+              </li>
+              <li>
+               Go to the
+               <strong>
+                Admin panel
+               </strong>
+               -&gt;
+               <strong>
+                Website settings
+               </strong>
+               -&gt;
+               <strong>
+                Vcards
+               </strong>
+               page and make sure you have the Custom domains / Additional domains feature enabled.
+              </li>
+              <li>
+               Go to the
+               <strong>
+                Admin panel
+               </strong>
+               -&gt;
+               <strong>
+                Website settings
+               </strong>
+               -&gt;
+               <strong>
+                Cache
+               </strong>
+               page and make sure you clear the cache.
+              </li>
+             </ul>
+            </div>
+           </div>
+          </div>
+         </div>
+        </section>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </main>
+  <script type="application/ld+json">
+   {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://s.zyrex.win/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Documentation",
+                "item": "https://github.com/JonathanZefanya/web-tools/blob/main/README.md"
+            }
+        ]
+    }
+  </script>
+  <script defer="">
+   document.addEventListener('DOMContentLoaded', () => {
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.sidebar a.nav-link');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+                    });
+                }
+            });
+        }, { rootMargin: '0px 0px -90% 0px' });
+
+        sections.forEach(section => observer.observe(section));
+    });
+  </script>
+  <script defer="" src="assets\jquery.slim.min.js">
+  </script>
+  <script defer="" src="assets\bootstrap.min.js">
+  </script>
+ </body>
+</html>
