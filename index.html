@@ -1,60 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Documentation - Web Tools
-  </title>
-  <meta content="Learn how to install, update &amp; run Web Tools PHP script on your web server and use it to it's full potential." name="description"/>
-  <link href="https://github.com/JonathanZefanya/web-tools/blob/main/README.md" rel="canonical"/>
-  <link href="assets\app.css" rel="stylesheet"/>
-  <!-- Opengraph -->
-  <meta content="website" property="og:type"/>
-  <meta content="Web Tools" property="og:site_name">
-   <meta content="1017" property="og:image:height"/>
-   <meta content="2000" property="og:image:width"/>
-   <meta content="Documentation - Web Tools" property="og:title"/>
-   <meta content="Learn how to install, update &amp; run Web Tools PHP script on your web server and use it to it's full potential." property="og:description"/>
-   <meta content="https://github.com/JonathanZefanya/web-tools/blob/main/README.md" property="og:url"/>
-   <!-- Twitter -->
-   <meta content="summary_large_image" name="twitter:card">
-    <meta content="@altumcode" name="twitter:site">
-     <meta content="https://github.com/JonathanZefanya/web-tools/blob/main/README.md" name="twitter:url">
-      <meta content="Documentation - Web Tools" name="twitter:title">
-       <meta content="Learn how to install, update &amp; run Web Tools PHP script on your web server and use it to it's full potential." name="twitter:description"/>
-       <!-- Favicons -->
-       <link href="./assets/images/favicon.png" rel="icon">
-        </script>
-       </link>
-      </meta>
-     </meta>
-    </meta>
-   </meta>
-  </meta>
- </head>
- <body>
-  <header class="mb-5 mb-lg-6 mb-xl-8">
-   <div class="container">
-    <nav class="navbar navbar-main navbar-expand-md navbar-light bg-white">
-     <a class="navbar-brand d-flex" href="https://xead.my.id/">
-      <img alt="Web Tools logo" class="img-fluid mr-3 logo" src="assets\logo.png"/>
-      Web Tools
-     </a>
-    </nav>
-   </div>
-  </header>
-  <main>
-   <div class="container">
-    <h1>
-     Web Tools documentation
-    </h1>
-    <div class="row mt-5">
-     <div class="col-12 col-lg-3 mb-5 mb-lg-0">
-      <div class="card bg-gray-50 sidebar-nav">
-       <div class="card-body">
-        <nav class="nav">
-         <ul class="sidebar list-style-none mb-0" id="sidebar-ul">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <title>Documentation - Web Tools</title>
+    <meta name="description" content="Learn how to install, update & run Web Tools PHP script on your web server and use it to it's full potential." />
+    <link rel="canonical" href="https://github.com/JonathanZefanya/web-tools/blob/main/README.md" />
+    <meta name="theme-color" content="#38b2ac" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+    <link rel="stylesheet" href="assets/vendor.css" />
+    <link rel="stylesheet" href="assets/app.css" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Web Tools" />
+    <meta property="og:title" content="Documentation - Web Tools" />
+    <meta property="og:description" content="Learn how to install, update & run Web Tools PHP script on your web server and use it to it's full potential." />
+    <meta property="og:url" content="https://github.com/JonathanZefanya/web-tools/blob/main/README.md" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@xeadesta" />
+    <meta name="twitter:url" content="https://github.com/JonathanZefanya/web-tools/blob/main/README.md" />
+    <meta name="twitter:title" content="Documentation - Web Tools" />
+    <meta name="twitter:description" content="Learn how to install, update & run Web Tools PHP script on your web server and use it to it's full potential." />
+    <!-- Accessibility & UX -->
+    <style>
+        /* Critical tiny enhancements (rest in app.css) */
+        :root { scroll-behavior: smooth; }
+        .skip-link{position:absolute;top:-40px;left:0;background:#000;color:#fff;padding:.5rem 1rem;z-index:1000;border-radius:.35rem;transition:top .3s}.skip-link:focus{top:.5rem}
+    </style>
+</head>
+<body>
+    <a href="#content" class="skip-link">Skip to content</a>
+    <header class="site-header shadow-sm">
+        <div class="container header-inner">
+            <nav class="navbar navbar-main navbar-expand-md navbar-light bg-white" aria-label="Main navigation">
+                <a class="navbar-brand d-flex align-items-center" href="https://xead.my.id/">
+                    <img src="assets/logo.png" class="img-fluid mr-3 logo" alt="Web Tools logo" />
+                    <span class="brand-text">Web Tools</span>
+                </a>
+                <button class="sidebar-toggle" id="sidebarToggle" aria-expanded="false" aria-controls="docsSidebar" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main id="main" class="main-wrapper">
+     <div class="container layout-docs">
+        <div class="docs-sidebar-wrapper" id="docsSidebar" aria-label="Documentation sections">
+         <div class="card bg-gray-50 sidebar-nav">
+            <div class="card-body p-0">
+             <nav class="nav">
+                <ul class="sidebar list-style-none mb-0" id="sidebar-ul">
           <li class="nav-item">
            <a class="nav-link" href="#start">
             Get started
@@ -132,12 +130,14 @@
             FAQ
            </a>
           </li>
-         </ul>
-        </nav>
-       </div>
+        </ul>
+       </nav>
       </div>
      </div>
-     <div class="col" id="content">
+    </div>
+    <div class="docs-content" id="content" tabindex="-1">
+     <h1 class="page-title">Web Tools Documentation</h1>
+     <p class="page-intro text-muted">Panduan lengkap instalasi, konfigurasi lanjutan, dan fitur Web Tools. Gunakan daftar navigasi di samping atau tombol menu pada layar kecil.</p>
       <div class="card bg-gray-50 mb-5">
        <div class="card-body">
         <section id="start">
@@ -2867,10 +2867,10 @@ if(!-e $request_filename){
              </h2>
             </div>
             <div class="collapse" id="test_notification_handler">
-             <div class="card-body">
-              <div class="table-responsive table-custom-container mb-4">
-               <table class="table table-custom">
-                <tbody>
+              <pre>
+    if (!-e $request_filename) {
+        rewrite ^\/(.+)$ /index.php?altum=$1 last;
+    }</pre>
                  <tr>
                   <td class="font-weight-bold">
                    Name
@@ -3565,7 +3565,7 @@ View all details at {{3}} 🔗</pre>
            <div class="card-header">
             <h2 class="mb-0">
              <button aria-controls="faq_nine" aria-expanded="true" class="btn btn-link btn-block text-left text-muted" data-target="#faq_nine" data-toggle="collapse" type="button">
-              © How to change/remove the default AltumCode branding on the footer?
+              © How to change/remove the default Web Tools branding on the footer?
              </button>
             </h2>
            </div>
@@ -3792,12 +3792,16 @@ View all details at {{3}} 🔗</pre>
          </div>
         </section>
        </div>
-      </div>
-     </div>
-    </div>
-   </div>
-  </main>
-  <script type="application/ld+json">
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-meta">
+                <p class="m-0">&copy; <span id="year"></span> Web Tools. All rights reserved.</p>
+                <p class="m-0 small">Built with semantic HTML & responsive design. <a href="#start">Back to top</a></p>
+            </div>
+        </div>
+    </footer>
+    <script type="application/ld+json">
    {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -3816,28 +3820,98 @@ View all details at {{3}} 🔗</pre>
             }
         ]
     }
-  </script>
-  <script defer="">
-   document.addEventListener('DOMContentLoaded', () => {
-        const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('.sidebar a.nav-link');
+    </script>
+    <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.sidebar a.nav-link');
+            const sidebar = document.getElementById('docsSidebar');
+            const toggle = document.getElementById('sidebarToggle');
+            const yearEl = document.getElementById('year');
 
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting) {
-                    navLinks.forEach(link => {
-                        link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+            if(yearEl) yearEl.textContent = new Date().getFullYear();
+
+            // Active section observer
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id));
+                    }
+                });
+            }, { rootMargin: '0px 0px -80% 0px' });
+            sections.forEach(section => observer.observe(section));
+
+            // Sidebar toggle for mobile
+            if(toggle){
+                toggle.addEventListener('click', () => {
+                    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+                    toggle.setAttribute('aria-expanded', String(!expanded));
+                    document.body.classList.toggle('sidebar-open');
+                    let backdrop = document.querySelector('.sidebar-backdrop');
+                    if(document.body.classList.contains('sidebar-open')){
+                        if(!backdrop){
+                            backdrop = document.createElement('div');
+                            backdrop.className = 'sidebar-backdrop';
+                            backdrop.addEventListener('click', () => {
+                                document.body.classList.remove('sidebar-open');
+                                toggle.setAttribute('aria-expanded','false');
+                            });
+                            document.body.appendChild(backdrop);
+                        }
+                    } else if(backdrop){
+                        backdrop.remove();
+                    }
+                });
+            }
+
+            // Close sidebar on link click (mobile)
+            navLinks.forEach(l => l.addEventListener('click', () => {
+                if(window.innerWidth < 992){
+                    document.body.classList.remove('sidebar-open');
+                    toggle.setAttribute('aria-expanded', 'false');
+                    const backdrop = document.querySelector('.sidebar-backdrop');
+                    if(backdrop) backdrop.remove();
+                }
+            }));
+
+            // Heading anchor links (h2-h4)
+            const headings = document.querySelectorAll('.docs-content h2[id], .docs-content h3[id], .docs-content h4[id]');
+            headings.forEach(h => {
+                if(!h.id) return;
+                const a = document.createElement('a');
+                a.href = '#' + h.id;
+                a.className = 'heading-anchor';
+                a.setAttribute('aria-label','Link ke bagian ' + h.textContent.trim());
+                a.innerHTML = '#';
+                h.appendChild(a);
+            });
+
+            // Code block copy buttons
+            const codeBlocks = document.querySelectorAll('pre');
+            codeBlocks.forEach(block => {
+                if(block.querySelector('code')){
+                    const btn = document.createElement('button');
+                    btn.type = 'button';
+                    btn.className = 'copy-btn';
+                    btn.innerHTML = '<span>Copy</span>';
+                    btn.addEventListener('click', async () => {
+                        const text = block.innerText.replace(/\n+$/,'');
+                        try {
+                            await navigator.clipboard.writeText(text);
+                            btn.classList.add('copied');
+                            btn.innerHTML = '<span>Copied</span>';
+                            setTimeout(()=>{ btn.classList.remove('copied'); btn.innerHTML='<span>Copy</span>'; }, 1800);
+                        } catch(e){
+                            btn.innerHTML = '<span>Error</span>';
+                            setTimeout(()=>{ btn.innerHTML='<span>Copy</span>'; }, 1500);
+                        }
                     });
+                    block.appendChild(btn);
                 }
             });
-        }, { rootMargin: '0px 0px -90% 0px' });
-
-        sections.forEach(section => observer.observe(section));
-    });
-  </script>
-  <script defer="" src="assets\jquery.slim.min.js">
-  </script>
-  <script defer="" src="assets\bootstrap.min.js">
-  </script>
- </body>
+        });
+    </script>
+    <script defer src="assets/jquery.slim.min.js"></script>
+    <script defer src="assets/bootstrap.min.js"></script>
+</body>
 </html>
