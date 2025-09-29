@@ -9,7 +9,7 @@
     <meta name="theme-color" content="#38b2ac" />
     <link rel="icon" href="./assets/images/favicon.png" />
     <link rel="stylesheet" href="assets/vendor.css" />
-    <link rel="stylesheet" href="assets/app.css" />
+    <link rel="stylesheet" href="assets/app-new.css" />
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Web Tools" />
@@ -24,21 +24,23 @@
     <meta name="twitter:description" content="Learn how to install, update & run Web Tools PHP script on your web server and use it to it's full potential." />
     <!-- Accessibility & UX -->
     <style>
-        /* Critical tiny enhancements (rest in app.css) */
         :root { scroll-behavior: smooth; }
         .skip-link{position:absolute;top:-40px;left:0;background:#000;color:#fff;padding:.5rem 1rem;z-index:1000;border-radius:.35rem;transition:top .3s}.skip-link:focus{top:.5rem}
     </style>
 </head>
 <body>
     <a href="#content" class="skip-link">Skip to content</a>
+    <div class="scroll-indicator">
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
     <header class="site-header shadow-sm">
         <div class="container header-inner">
             <nav class="navbar navbar-main navbar-expand-md navbar-light bg-white" aria-label="Main navigation">
-                <a class="navbar-brand d-flex align-items-center" href="https://xead.my.id/">
+                <a class="navbar-brand d-flex align-items-center" href="https://xead.my.id/" data-tooltip="Kembali ke Homepage">
                     <img src="assets/logo.png" class="img-fluid mr-3 logo" alt="Web Tools logo" />
                     <span class="brand-text">Web Tools</span>
                 </a>
-                <button class="sidebar-toggle" id="sidebarToggle" aria-expanded="false" aria-controls="docsSidebar" aria-label="Toggle navigation">
+                <button class="sidebar-toggle" id="sidebarToggle" aria-expanded="false" aria-controls="docsSidebar" aria-label="Toggle navigation" data-tooltip="Menu Navigasi">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -1352,27 +1354,26 @@ if(!-e $request_filename){
         </section>
        </div>
       </div>
-      <div class="card bg-gray-50 mb-5">
-       <div class="card-body">
-        <section id="payment-processors">
-         <h2 class="h5">
-          Payment Processors
+      <div class="card bg-gray-50 mb-5" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+       <div class="card-body" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
+        <section id="payment-processors" style="display: block !important; visibility: visible !important; opacity: 1 !important; background: #fffbeb !important; border: 2px solid #f59e0b !important; padding: 30px !important; border-radius: 10px !important;">
+         <h2 class="h5" style="color: #d97706 !important; font-size: 1.5rem !important; font-weight: bold !important;">
+          🔥 Payment Processors 🔥
          </h2>
-         <p class="text-muted">
+         <p class="text-muted" style="color: #374151 !important; font-size: 1.1rem !important;">
           Follow these steps to connect your system with available payment gateways.
-          <strong>
-           Only available for Extended License holders.
-          </strong>
+
          </p>
+         
          <!-- PayPal -->
-         <div class="block" id="paypal">
-          <h3 class="h6 mb-3">
-           PayPal
+         <div class="block" id="paypal" style="background: #fef3c7 !important; border: 2px solid #f59e0b !important; padding: 20px !important; margin: 20px 0 !important; border-radius: 8px !important;">
+          <h3 class="h6 mb-3" style="color: #d97706 !important; font-size: 1.3rem !important; font-weight: bold !important;">
+           💳 PayPal
           </h3>
-          <ol>
+          <ol style="font-size: 1rem !important; line-height: 1.6 !important;">
            <li>
             Go to the
-            <a href="https://developer.paypal.com/" target="_blank">
+            <a href="https://developer.paypal.com/" target="_blank" style="color: #2563eb !important; font-weight: bold !important;">
              PayPal Developer Dashboard
             </a>
             and log in.
@@ -1467,8 +1468,8 @@ if(!-e $request_filename){
           </ol>
          </div>
          <!-- Stripe -->
-         <div class="block" id="stripe">
-          <h3 class="h6 mb-3">
+         <div class="block" id="stripe" style="background: #fef3c7 !important; border: 2px solid #f59e0b !important; padding: 20px !important; margin: 20px 0 !important; border-radius: 8px !important;">
+          <h3 class="h6 mb-3" style="color: #d97706 !important; font-size: 1.3rem !important; font-weight: bold !important;">
            Stripe
           </h3>
           <ol>
@@ -1574,8 +1575,8 @@ if(!-e $request_filename){
           </ol>
          </div>
          <!-- Offline Payments -->
-         <div class="block" id="offline_payments">
-          <h3 class="h6 mb-3">
+         <div class="block" id="offline_payment" style="background: #fef3c7 !important; border: 2px solid #f59e0b !important; padding: 20px !important; margin: 20px 0 !important; border-radius: 8px !important;">
+          <h3 class="h6 mb-3" style="color: #d97706 !important; font-size: 1.3rem !important; font-weight: bold !important;">
            Offline Payments
           </h3>
           <ol>
@@ -1619,8 +1620,8 @@ if(!-e $request_filename){
           </ol>
          </div>
          <!-- Coinbase -->
-         <div class="block" id="coinbase">
-          <h3 class="h6 mb-3">
+         <div class="block" id="coinbase" style="background: #fef3c7 !important; border: 2px solid #f59e0b !important; padding: 20px !important; margin: 20px 0 !important; border-radius: 8px !important;">
+          <h3 class="h6 mb-3" style="color: #d97706 !important; font-size: 1.3rem !important; font-weight: bold !important;">
            Coinbase Commerce
           </h3>
           <ol>
@@ -1696,8 +1697,8 @@ if(!-e $request_filename){
           </ol>
          </div>
          <!-- Crypto.com -->
-         <div class="block" id="crypto_com">
-          <h3 class="h6 mb-3">
+         <div class="block" id="crypto_com" style="background: #fef3c7 !important; border: 2px solid #f59e0b !important; padding: 20px !important; margin: 20px 0 !important; border-radius: 8px !important;">
+          <h3 class="h6 mb-3" style="color: #d97706 !important; font-size: 1.3rem !important; font-weight: bold !important;">
            Crypto.com
           </h3>
           <ol>
@@ -1773,8 +1774,8 @@ if(!-e $request_filename){
           </ol>
          </div>
          <!-- PayU -->
-         <div class="block" id="payu">
-          <h3 class="h6 mb-3">
+         <div class="block" id="payu" style="background: #fef3c7 !important; border: 2px solid #f59e0b !important; padding: 20px !important; margin: 20px 0 !important; border-radius: 8px !important;">
+          <h3 class="h6 mb-3" style="color: #d97706 !important; font-size: 1.3rem !important; font-weight: bold !important;">
            PayU
           </h3>
           <ol>
@@ -1802,8 +1803,8 @@ if(!-e $request_filename){
           </ol>
          </div>
          <!-- Iyzico -->
-         <div class="block" id="iyzico">
-          <h3 class="h6 mb-3">
+         <div class="block" id="iyzico" style="background: #fef3c7 !important; border: 2px solid #f59e0b !important; padding: 20px !important; margin: 20px 0 !important; border-radius: 8px !important;">
+          <h3 class="h6 mb-3" style="color: #d97706 !important; font-size: 1.3rem !important; font-weight: bold !important;">
            Iyzico
           </h3>
           <ol>
@@ -1860,8 +1861,8 @@ if(!-e $request_filename){
           </ol>
          </div>
          <!-- Paystack -->
-         <div class="block" id="paystack">
-          <h3 class="h6 mb-3">
+         <div class="block" id="paystack" style="background: #fef3c7 !important; border: 2px solid #f59e0b !important; padding: 20px !important; margin: 20px 0 !important; border-radius: 8px !important;">
+          <h3 class="h6 mb-3" style="color: #d97706 !important; font-size: 1.3rem !important; font-weight: bold !important;">
            Paystack
           </h3>
           <ol>
@@ -1903,8 +1904,8 @@ if(!-e $request_filename){
           </ol>
          </div>
          <!-- Razorpay -->
-         <div class="block" id="razorpay">
-          <h3 class="h6 mb-3">
+         <div class="block" id="razorpay" style="background: #fef3c7 !important; border: 2px solid #f59e0b !important; padding: 20px !important; margin: 20px 0 !important; border-radius: 8px !important;">
+          <h3 class="h6 mb-3" style="color: #d97706 !important; font-size: 1.3rem !important; font-weight: bold !important;">
            Razorpay
           </h3>
           <ol>
@@ -1979,8 +1980,8 @@ if(!-e $request_filename){
           </ol>
          </div>
          <!-- Mollie -->
-         <div class="block" id="mollie">
-          <h3 class="h6 mb-3">
+         <div class="block" id="mollie" style="background: #fef3c7 !important; border: 2px solid #f59e0b !important; padding: 20px !important; margin: 20px 0 !important; border-radius: 8px !important;">
+          <h3 class="h6 mb-3" style="color: #d97706 !important; font-size: 1.3rem !important; font-weight: bold !important;">
            Mollie
           </h3>
           <ol>
@@ -2015,8 +2016,8 @@ if(!-e $request_filename){
           </ol>
          </div>
          <!-- Yookassa -->
-         <div class="block" id="yookassa">
-          <h3 class="h6 mb-3">
+         <div class="block" id="yookassa" style="background: #fef3c7 !important; border: 2px solid #f59e0b !important; padding: 20px !important; margin: 20px 0 !important; border-radius: 8px !important;">
+          <h3 class="h6 mb-3" style="color: #d97706 !important; font-size: 1.3rem !important; font-weight: bold !important;">
            Yookassa
           </h3>
           <ol>
@@ -2062,8 +2063,8 @@ if(!-e $request_filename){
           </ol>
          </div>
          <!-- Paddle -->
-         <div class="block" id="paddle">
-          <h3 class="h6 mb-3">
+         <div class="block" id="paddle" style="background: #fef3c7 !important; border: 2px solid #f59e0b !important; padding: 20px !important; margin: 20px 0 !important; border-radius: 8px !important;">
+          <h3 class="h6 mb-3" style="color: #d97706 !important; font-size: 1.3rem !important; font-weight: bold !important;">
            Paddle
           </h3>
           <ol>
@@ -2110,8 +2111,8 @@ if(!-e $request_filename){
           </ol>
          </div>
          <!-- Midtrans -->
-         <div class="block" id="midtrans">
-          <h3 class="h6 mb-3">
+         <div class="block" id="midtrans" style="background: #fef3c7 !important; border: 2px solid #f59e0b !important; padding: 20px !important; margin: 20px 0 !important; border-radius: 8px !important;">
+          <h3 class="h6 mb-3" style="color: #d97706 !important; font-size: 1.3rem !important; font-weight: bold !important;">
            Midtrans
           </h3>
           <ol>
@@ -2147,8 +2148,8 @@ if(!-e $request_filename){
           </ol>
          </div>
          <!-- Flutterwave -->
-         <div class="block" id="flutterwave">
-          <h3 class="h6 mb-3">
+         <div class="block" id="flutterwave" style="background: #fef3c7 !important; border: 2px solid #f59e0b !important; padding: 20px !important; margin: 20px 0 !important; border-radius: 8px !important;">
+          <h3 class="h6 mb-3" style="color: #d97706 !important; font-size: 1.3rem !important; font-weight: bold !important;">
            Flutterwave
           </h3>
           <ol>
@@ -2191,8 +2192,8 @@ if(!-e $request_filename){
           </ol>
          </div>
          <!-- LemonSqueezy -->
-         <div class="block" id="lemonsqueezy">
-          <h3 class="h6 mb-3">
+         <div class="block" id="lemonsqueezy" style="background: #fef3c7 !important; border: 2px solid #f59e0b !important; padding: 20px !important; margin: 20px 0 !important; border-radius: 8px !important;">
+          <h3 class="h6 mb-3" style="color: #d97706 !important; font-size: 1.3rem !important; font-weight: bold !important;">
            LemonSqueezy
           </h3>
           <ol>
@@ -3828,87 +3829,551 @@ View all details at {{3}} 🔗</pre>
             const sidebar = document.getElementById('docsSidebar');
             const toggle = document.getElementById('sidebarToggle');
             const yearEl = document.getElementById('year');
+            const body = document.body;
 
             if(yearEl) yearEl.textContent = new Date().getFullYear();
 
-            // Active section observer
+            // Debug logging
+            // Navigation system initialized
+            console.log('Navigation system initialized with', sections.length, 'sections and', navLinks.length, 'navigation links');
+            
+            // Force payment-processors content visibility
+            const ensurePaymentProcessorsVisibility = () => {
+                const paymentSection = document.querySelector('#payment-processors');
+                if (paymentSection) {
+                    // Force section visibility
+                    paymentSection.style.display = 'block';
+                    paymentSection.style.visibility = 'visible';
+                    paymentSection.style.opacity = '1';
+                    
+                    // Force all content blocks visibility
+                    const blocks = paymentSection.querySelectorAll('.block');
+                    blocks.forEach(block => {
+                        block.style.display = 'block';
+                        block.style.visibility = 'visible';
+                        block.style.opacity = '1';
+                    });
+                    
+                    // Force text elements visibility
+                    const textElements = paymentSection.querySelectorAll('h2, h3, p, ol, li, a, code, strong');
+                    textElements.forEach(el => {
+                        el.style.display = '';
+                        el.style.visibility = 'visible';
+                        el.style.opacity = '1';
+                    });
+                    
+                    console.log('Payment processors content visibility ensured');
+                }
+            };
+            
+            // Run immediately and after page load
+            ensurePaymentProcessorsVisibility();
+            setTimeout(ensurePaymentProcessorsVisibility, 500);
+            
+            // Emergency fix for payment-processors if needed
+            setTimeout(() => {
+                const paymentSection = document.querySelector('#payment-processors');
+                if (paymentSection) {
+                    // Check if content is visible
+                    const rect = paymentSection.getBoundingClientRect();
+                    const isVisible = rect.width > 0 && rect.height > 0;
+                    
+                    if (!isVisible || paymentSection.offsetHeight < 100) {
+                        console.log('Applying emergency fix for payment-processors');
+                        document.body.classList.add('emergency-fix', 'debug');
+                        ensurePaymentProcessorsVisibility();
+                    } else {
+                        console.log('Payment processors section is visible:', {
+                            width: rect.width,
+                            height: rect.height,
+                            offsetHeight: paymentSection.offsetHeight
+                        });
+                    }
+                }
+            }, 1000);
+            
+            // Sidebar functionality
+            function toggleSidebar() {
+                body.classList.toggle('sidebar-open');
+                const isOpen = body.classList.contains('sidebar-open');
+                toggle.setAttribute('aria-expanded', isOpen);
+            }
+
+            function closeSidebar() {
+                body.classList.remove('sidebar-open');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+
+            // Event listeners
+            if(toggle) {
+                toggle.addEventListener('click', toggleSidebar);
+            }
+
+            backdrop.addEventListener('click', closeSidebar);
+
+            // Active section observer - simplified for better reliability
             const observer = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id));
+                    const id = entry.target.getAttribute('id');
+                    const link = document.querySelector(`.sidebar a.nav-link[href="#${id}"]`);
+                    
+                    if (entry.isIntersecting && entry.intersectionRatio > 0.1) {
+                        // Remove active from all links first
+                        navLinks.forEach(l => l.classList.remove('active'));
+                        
+                        // Add active to current link
+                        if (link) {
+                            link.classList.add('active');
+                        }
                     }
                 });
-            }, { rootMargin: '0px 0px -80% 0px' });
+            }, { 
+                rootMargin: '-150px 0px -40% 0px',
+                threshold: [0.1, 0.3, 0.5]
+            });
+            
             sections.forEach(section => observer.observe(section));
 
-            // Sidebar toggle for mobile
-            if(toggle){
-                toggle.addEventListener('click', () => {
-                    const expanded = toggle.getAttribute('aria-expanded') === 'true';
-                    toggle.setAttribute('aria-expanded', String(!expanded));
-                    document.body.classList.toggle('sidebar-open');
-                    let backdrop = document.querySelector('.sidebar-backdrop');
-                    if(document.body.classList.contains('sidebar-open')){
-                        if(!backdrop){
-                            backdrop = document.createElement('div');
-                            backdrop.className = 'sidebar-backdrop';
-                            backdrop.addEventListener('click', () => {
-                                document.body.classList.remove('sidebar-open');
-                                toggle.setAttribute('aria-expanded','false');
+            // Smooth scroll for navigation links
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    const href = link.getAttribute('href');
+                    if (href && href.startsWith('#')) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        
+                        if (target) {
+                            // Calculate precise scroll position
+                            const headerHeight = 80; // Fixed header height
+                            const scrollIndicatorHeight = 3; // Fixed indicator height
+                            const padding = 30; // Extra padding for better visibility
+                            const targetPosition = target.offsetTop - headerHeight - scrollIndicatorHeight - padding;
+                            
+                            // Set active state immediately
+                            navLinks.forEach(l => l.classList.remove('active'));
+                            link.classList.add('active');
+                            
+                            // Smooth scroll
+                            window.scrollTo({
+                                top: Math.max(0, targetPosition),
+                                behavior: 'smooth'
                             });
-                            document.body.appendChild(backdrop);
+                            
+                            // Update URL after scroll starts
+                            setTimeout(() => {
+                                window.history.replaceState(null, null, href);
+                            }, 50);
+                            
+                            // Close mobile sidebar
+                            if (window.innerWidth < 1024) {
+                                closeSidebar();
+                            }
                         }
-                    } else if(backdrop){
-                        backdrop.remove();
                     }
+                });
+            });
+
+            // Enhanced heading anchor links
+            const headings = document.querySelectorAll('.docs-content h2[id], .docs-content h3[id], .docs-content h4[id]');
+            headings.forEach(heading => {
+                if(!heading.id) return;
+                
+                const anchor = document.createElement('a');
+                anchor.href = '#' + heading.id;
+                anchor.className = 'heading-anchor';
+                anchor.setAttribute('aria-label', 'Link ke bagian ' + heading.textContent.trim());
+                anchor.textContent = '#';
+                
+                anchor.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const headerHeight = document.querySelector('.site-header')?.offsetHeight || 0;
+                    const targetPosition = heading.offsetTop - headerHeight - 24;
+                    
+                    window.scrollTo({
+                        top: Math.max(0, targetPosition),
+                        behavior: 'smooth'
+                    });
+                    
+                    window.history.replaceState(null, null, anchor.href);
+                });
+                
+                heading.appendChild(anchor);
+            });
+
+            // Enhanced code block copy functionality
+            const codeBlocks = document.querySelectorAll('pre');
+            codeBlocks.forEach(block => {
+                if(block.querySelector('code')) {
+                    const button = document.createElement('button');
+                    button.type = 'button';
+                    button.className = 'copy-btn';
+                    button.innerHTML = '<span>Copy</span>';
+                    button.setAttribute('aria-label', 'Copy code to clipboard');
+                    
+                    button.addEventListener('click', async () => {
+                        const code = block.querySelector('code').textContent.trim();
+                        
+                        try {
+                            await navigator.clipboard.writeText(code);
+                            button.innerHTML = '<span>✓ Copied!</span>';
+                            button.classList.add('copied');
+                            
+                            setTimeout(() => {
+                                button.innerHTML = '<span>Copy</span>';
+                                button.classList.remove('copied');
+                            }, 2000);
+                        } catch (err) {
+                            // Fallback for older browsers
+                            const textArea = document.createElement('textarea');
+                            textArea.value = code;
+                            textArea.style.cssText = 'position:fixed;opacity:0;pointer-events:none;';
+                            document.body.appendChild(textArea);
+                            textArea.select();
+                            
+                            try {
+                                document.execCommand('copy');
+                                button.innerHTML = '<span>✓ Copied!</span>';
+                                button.classList.add('copied');
+                            } catch {
+                                button.innerHTML = '<span>✗ Failed</span>';
+                            } finally {
+                                document.body.removeChild(textArea);
+                                setTimeout(() => {
+                                    button.innerHTML = '<span>Copy</span>';
+                                    button.classList.remove('copied');
+                                }, 2000);
+                            }
+                        }
+                    });
+                    
+                    block.style.position = 'relative';
+                    block.appendChild(button);
+                }
+            });
+
+            // Keyboard shortcuts and accessibility
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && body.classList.contains('sidebar-open')) {
+                    closeSidebar();
+                }
+            });
+
+            // Auto-close sidebar on desktop resize
+            let resizeTimeout;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(() => {
+                    if (window.innerWidth >= 1024) {
+                        closeSidebar();
+                    }
+                }, 100);
+            });
+
+            // Initialize active navigation based on URL hash
+            const initializeActiveNav = () => {
+                const hash = window.location.hash;
+                if (hash) {
+                    const targetLink = document.querySelector(`.sidebar a.nav-link[href="${hash}"]`);
+                    const targetSection = document.querySelector(hash);
+                    
+                    if (targetLink && targetSection) {
+                        // Set active state
+                        navLinks.forEach(link => link.classList.remove('active'));
+                        targetLink.classList.add('active');
+                        
+                        // Scroll to section if needed
+                        setTimeout(() => {
+                            const headerHeight = document.querySelector('.site-header')?.offsetHeight || 80;
+                            const scrollIndicatorHeight = document.querySelector('.scroll-indicator')?.offsetHeight || 3;
+                            const targetPosition = targetSection.offsetTop - headerHeight - scrollIndicatorHeight - 30;
+                            
+                            if (Math.abs(window.pageYOffset - targetPosition) > 100) {
+                                window.scrollTo({
+                                    top: Math.max(0, targetPosition),
+                                    behavior: 'smooth'
+                                });
+                            }
+                        }, 200);
+                    }
+                } else {
+                    // No hash, activate first section
+                    const firstSection = sections[0];
+                    if (firstSection) {
+                        const firstLink = document.querySelector(`.sidebar a.nav-link[href="#${firstSection.id}"]`);
+                        if (firstLink) {
+                            navLinks.forEach(link => link.classList.remove('active'));
+                            firstLink.classList.add('active');
+                        }
+                    }
+                }
+            };
+
+
+
+            // Initialize navigation immediately and after DOM is fully loaded
+            initializeActiveNav();
+            
+            // Re-initialize after a short delay to ensure everything is loaded
+            setTimeout(() => {
+                initializeActiveNav();
+                
+                // Special handling for payment-processors
+                if (window.location.hash === '#payment-processors') {
+                    const target = document.querySelector('#payment-processors');
+                    const link = document.querySelector('a[href="#payment-processors"]');
+                    
+                    if (target && link) {
+                        // Force visibility
+                        target.style.display = 'block';
+                        target.style.visibility = 'visible';
+                        target.style.opacity = '1';
+                        
+                        // Force all child elements to be visible
+                        const childElements = target.querySelectorAll('*');
+                        childElements.forEach(el => {
+                            el.style.display = '';
+                            el.style.visibility = 'visible';
+                            el.style.opacity = '1';
+                        });
+                        
+                        // Force active state
+                        navLinks.forEach(l => l.classList.remove('active'));
+                        link.classList.add('active');
+                        
+                        // Force scroll
+                        const targetPosition = target.offsetTop - 120;
+                        window.scrollTo({
+                            top: Math.max(0, targetPosition),
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            }, 800);
+            
+            // Handle browser back/forward
+            window.addEventListener('popstate', initializeActiveNav);
+            
+            // Handle hash changes
+            window.addEventListener('hashchange', initializeActiveNav);
+
+            // Scroll progress indicator
+            const scrollProgress = document.getElementById('scrollProgress');
+            if (scrollProgress) {
+                const updateScrollProgress = () => {
+                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+                    const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+                    scrollProgress.style.width = `${Math.min(100, Math.max(0, progress))}%`;
+                };
+
+                let ticking = false;
+                const requestScrollUpdate = () => {
+                    if (!ticking) {
+                        requestAnimationFrame(updateScrollProgress);
+                        ticking = true;
+                        setTimeout(() => { ticking = false; }, 10);
+                    }
+                };
+
+                window.addEventListener('scroll', requestScrollUpdate, { passive: true });
+                window.addEventListener('resize', requestScrollUpdate, { passive: true });
+                updateScrollProgress();
+            }
+
+            // Enhanced card animations on scroll
+            const observeCards = () => {
+                const cards = document.querySelectorAll('.card');
+                const cardObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.animationDelay = '0s';
+                            entry.target.classList.add('animate-in');
+                        }
+                    });
+                }, {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -50px 0px'
+                });
+
+                cards.forEach(card => {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(20px)';
+                    card.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                    cardObserver.observe(card);
+                });
+            };
+
+            // CSS for animate-in class
+            const style = document.createElement('style');
+            style.textContent = `
+                .animate-in {
+                    opacity: 1 !important;
+                    transform: translateY(0) !important;
+                }
+            `;
+            document.head.appendChild(style);
+
+            observeCards();
+
+            // Smooth scroll polyfill for older browsers
+            if (!('scrollBehavior' in document.documentElement.style)) {
+                const smoothScrollPolyfill = (target, duration = 500) => {
+                    const start = window.pageYOffset;
+                    const distance = target - start;
+                    let startTime = null;
+
+                    const animation = (currentTime) => {
+                        if (startTime === null) startTime = currentTime;
+                        const timeElapsed = currentTime - startTime;
+                        const run = ease(timeElapsed, start, distance, duration);
+                        window.scrollTo(0, run);
+                        if (timeElapsed < duration) requestAnimationFrame(animation);
+                    };
+
+                    const ease = (t, b, c, d) => {
+                        t /= d / 2;
+                        if (t < 1) return c / 2 * t * t + b;
+                        t--;
+                        return -c / 2 * (t * (t - 2) - 1) + b;
+                    };
+
+                    requestAnimationFrame(animation);
+                };
+
+                // Override smooth scroll behavior
+                navLinks.forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        const href = link.getAttribute('href');
+                        if (href && href.startsWith('#')) {
+                            e.preventDefault();
+                            const target = document.querySelector(href);
+                            if (target) {
+                                const headerHeight = document.querySelector('.site-header')?.offsetHeight || 0;
+                                const targetPosition = target.offsetTop - headerHeight - 24;
+                                smoothScrollPolyfill(Math.max(0, targetPosition));
+                                window.history.replaceState(null, null, href);
+                                if (window.innerWidth < 1024) {
+                                    closeSidebar();
+                                }
+                            }
+                        }
+                    });
                 });
             }
 
-            // Close sidebar on link click (mobile)
-            navLinks.forEach(l => l.addEventListener('click', () => {
-                if(window.innerWidth < 992){
-                    document.body.classList.remove('sidebar-open');
-                    toggle.setAttribute('aria-expanded', 'false');
-                    const backdrop = document.querySelector('.sidebar-backdrop');
-                    if(backdrop) backdrop.remove();
-                }
-            }));
+            // Add loading states for better perceived performance
+            const addLoadingState = () => {
+                const loadingElements = document.querySelectorAll('pre, .table-responsive');
+                loadingElements.forEach((el, index) => {
+                    el.classList.add('loading');
+                    setTimeout(() => {
+                        el.classList.remove('loading');
+                        el.style.animationDelay = `${index * 0.1}s`;
+                        el.classList.add('animate-in');
+                    }, 200 + (index * 50));
+                });
+            };
 
-            // Heading anchor links (h2-h4)
-            const headings = document.querySelectorAll('.docs-content h2[id], .docs-content h3[id], .docs-content h4[id]');
-            headings.forEach(h => {
-                if(!h.id) return;
-                const a = document.createElement('a');
-                a.href = '#' + h.id;
-                a.className = 'heading-anchor';
-                a.setAttribute('aria-label','Link ke bagian ' + h.textContent.trim());
-                a.innerHTML = '#';
-                h.appendChild(a);
-            });
+            // Performance optimized debounce function
+            const debounce = (func, wait) => {
+                let timeout;
+                return function executedFunction(...args) {
+                    const later = () => {
+                        clearTimeout(timeout);
+                        func(...args);
+                    };
+                    clearTimeout(timeout);
+                    timeout = setTimeout(later, wait);
+                };
+            };
 
-            // Code block copy buttons
-            const codeBlocks = document.querySelectorAll('pre');
-            codeBlocks.forEach(block => {
-                if(block.querySelector('code')){
-                    const btn = document.createElement('button');
-                    btn.type = 'button';
-                    btn.className = 'copy-btn';
-                    btn.innerHTML = '<span>Copy</span>';
-                    btn.addEventListener('click', async () => {
-                        const text = block.innerText.replace(/\n+$/,'');
-                        try {
-                            await navigator.clipboard.writeText(text);
-                            btn.classList.add('copied');
-                            btn.innerHTML = '<span>Copied</span>';
-                            setTimeout(()=>{ btn.classList.remove('copied'); btn.innerHTML='<span>Copy</span>'; }, 1800);
-                        } catch(e){
-                            btn.innerHTML = '<span>Error</span>';
-                            setTimeout(()=>{ btn.innerHTML='<span>Copy</span>'; }, 1500);
+            // Lazy load images if any
+            const lazyLoadImages = () => {
+                const images = document.querySelectorAll('img[data-src]');
+                const imageObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            img.src = img.dataset.src;
+                            img.classList.remove('lazy');
+                            imageObserver.unobserve(img);
                         }
                     });
-                    block.appendChild(btn);
+                });
+
+                images.forEach(img => imageObserver.observe(img));
+            };
+
+            // Enhanced keyboard navigation
+            const handleKeyboardNavigation = (e) => {
+                const { key, ctrlKey, metaKey } = e;
+                
+                // Ctrl/Cmd + K to focus search (if search exists)
+                if ((ctrlKey || metaKey) && key === 'k') {
+                    e.preventDefault();
+                    const searchInput = document.querySelector('input[type="search"]');
+                    if (searchInput) {
+                        searchInput.focus();
+                    }
                 }
-            });
+                
+                // Tab navigation enhancement
+                if (key === 'Tab' && body.classList.contains('sidebar-open')) {
+                    const focusableElements = sidebar.querySelectorAll('a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])');
+                    const firstElement = focusableElements[0];
+                    const lastElement = focusableElements[focusableElements.length - 1];
+                    
+                    if (e.shiftKey && document.activeElement === firstElement) {
+                        e.preventDefault();
+                        lastElement.focus();
+                    } else if (!e.shiftKey && document.activeElement === lastElement) {
+                        e.preventDefault();
+                        firstElement.focus();
+                    }
+                }
+            };
+
+            document.addEventListener('keydown', handleKeyboardNavigation);
+
+            // Add tooltips for interactive elements
+            const addTooltips = () => {
+                const elementsWithTooltips = document.querySelectorAll('[data-tooltip]');
+                elementsWithTooltips.forEach(el => {
+                    const tooltip = document.createElement('div');
+                    tooltip.className = 'tooltip';
+                    tooltip.textContent = el.dataset.tooltip;
+                    el.appendChild(tooltip);
+                    
+                    el.addEventListener('mouseenter', () => {
+                        tooltip.style.visibility = 'visible';
+                        tooltip.style.opacity = '1';
+                    });
+                    
+                    el.addEventListener('mouseleave', () => {
+                        tooltip.style.visibility = 'hidden';
+                        tooltip.style.opacity = '0';
+                    });
+                });
+            };
+
+            // Initialize everything
+            setTimeout(addLoadingState, 100);
+            lazyLoadImages();
+            addTooltips();
+
+            // Add performance monitoring
+            if ('performance' in window && 'measure' in performance) {
+                window.addEventListener('load', () => {
+                    setTimeout(() => {
+                        const perfData = performance.getEntriesByType('navigation')[0];
+                        console.log('Page Load Performance:', {
+                            domContentLoaded: perfData.domContentLoadedEventEnd - perfData.domContentLoadedEventStart,
+                            loadComplete: perfData.loadEventEnd - perfData.loadEventStart,
+                            totalTime: perfData.loadEventEnd - perfData.fetchStart
+                        });
+                    }, 0);
+                });
+            }
         });
     </script>
     <script defer src="assets/jquery.slim.min.js"></script>
